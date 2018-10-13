@@ -1,0 +1,5 @@
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.dll
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.pdb
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb

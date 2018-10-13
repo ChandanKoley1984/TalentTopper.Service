@@ -1,0 +1,7 @@
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Entity\bin\Debug\Talent.Topper.Entity.dll
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Entity\bin\Debug\Talent.Topper.Entity.pdb
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Entity\bin\Debug\MongoDB.Bson.dll
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Entity\bin\Debug\MongoDB.Bson.xml
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.dll
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.pdb
+E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.csprojResolveAssemblyReference.cache
