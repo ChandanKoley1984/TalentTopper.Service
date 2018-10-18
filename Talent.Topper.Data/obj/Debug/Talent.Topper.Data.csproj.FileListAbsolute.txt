@@ -3,3 +3,8 @@ E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talent.Top
 E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
 E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
 E:\subhasis\project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb
+E:\subhasis\TTService\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.dll
+E:\subhasis\TTService\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.pdb
+E:\subhasis\TTService\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
+E:\subhasis\TTService\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
+E:\subhasis\TTService\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb

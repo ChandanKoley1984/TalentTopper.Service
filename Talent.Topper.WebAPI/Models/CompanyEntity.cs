@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,7 +8,9 @@ using System.Web;
 namespace Talent.Topper.WebAPI.Models
 {
     public class CompanyEntity
-    {        
+    {
+        [BsonId]
+        public ObjectId ID { get; set; }
         public string CompanayName { get; set; }       
         public string FullAddress { get; set; }        
         public string CountryCode { get; set; }        
