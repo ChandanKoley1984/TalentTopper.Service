@@ -32,7 +32,7 @@ namespace Talent.Topper.WebAPI.Controllers
             catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
-            }            
+            }
         }
 
         [HttpPost]
@@ -41,15 +41,19 @@ namespace Talent.Topper.WebAPI.Controllers
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
-                var data = "Get Data From Database";
+                MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+                List<CompanyEntity> companyMasterList = new List<CompanyEntity>();
+                companyMasterList.Add(companyEntity);
 
-                if (data != null)
+                bool data = _mongoHelperobj.InsertMany("CompanyMaster", companyMasterList);
+
+                if (data)
                 {
                     return response = Request.CreateResponse(HttpStatusCode.OK, data);
                 }
                 else
                 {
-                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Unable to save data");
                 }
             }
             catch (Exception ex)
@@ -88,16 +92,7 @@ namespace Talent.Topper.WebAPI.Controllers
             try
             {
                 List<CompanyEntity> _companyEntitys = new List<CompanyEntity>();
-                //CompanyEntity _companyEntity;
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    _companyEntity = new CompanyEntity();
-                //    _companyEntity.CompanayName = "Test";
-                //    _companyEntity.Email = "Test@test.com";
-                //    _companyEntity.WebsiteURL = "www.test.com";
-                //    _companyEntitys.Add(_companyEntity);
-                //}
-
+               
                 _companyEntitys = AdminServiceHelper.GetCompanyList();
 
                 if (_companyEntitys != null)

@@ -115,7 +115,20 @@ namespace MongoHelper
                 returnList.Add(BsonSerializer.Deserialize<T>(l));
             }
             return returnList;
-        }        
+        }
+
+        public List<T> SelectAll<T>(string collectionName)
+        {
+            var collection = _database.GetCollection<BsonDocument>(collectionName);
+            var result = collection.AsQueryable().ToList();
+            List<T> returnList = new List<T>();
+            foreach (var l in result)
+            {
+                returnList.Add(BsonSerializer.Deserialize<T>(l));
+            }
+            return returnList;
+        }
+
         /// <summary>
         /// Select a single record of the given type
         /// </summary>

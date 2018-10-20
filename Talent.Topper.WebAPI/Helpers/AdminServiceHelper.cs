@@ -11,8 +11,9 @@ namespace Talent.Topper.WebAPI.Helpers
         internal static List<CompanyEntity> GetCompanyList(int companyID = 0)
         {
             //call Database
-
-            return new List<CompanyEntity>();
+            MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+            List<CompanyEntity> companyMasterList = _mongoHelperobj.SelectAll<CompanyEntity>("CompanyMaster");
+            return companyMasterList;
         }
     }
 }
