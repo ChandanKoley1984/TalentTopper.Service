@@ -13,20 +13,24 @@ namespace Talent.Topper.WebAPI.Controllers
     public class AdminServiceController : ApiController, IAdminService
     {
         [HttpPost]
-        public HttpResponseMessage CreateBranch()
+        public HttpResponseMessage CreateBranch([FromBody] BranchEntity branchEntity)
         {
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
-                var data = "Get Data From Database";
+                MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+                List<BranchEntity> branchMasterList = new List<BranchEntity>();
+                branchMasterList.Add(branchEntity);
 
-                if (data != null)
+                bool data = _mongoHelperobj.InsertMany("BranchMaster", branchMasterList);
+
+                if (data)
                 {
                     return response = Request.CreateResponse(HttpStatusCode.OK, data);
                 }
                 else
                 {
-                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Unable to save data");
                 }
             }
             catch (Exception ex)
@@ -68,11 +72,13 @@ namespace Talent.Topper.WebAPI.Controllers
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
-                var data = "Get Data From Database";
+                List<BranchEntity> _branchEntities = new List<BranchEntity>();
 
-                if (data != null)
+                _branchEntities = AdminServiceHelper.GetBranchList();
+
+                if (_branchEntities != null)
                 {
-                    return response = Request.CreateResponse(HttpStatusCode.OK, data);
+                    return response = Request.CreateResponse(HttpStatusCode.OK, _branchEntities);
                 }
                 else
                 {
