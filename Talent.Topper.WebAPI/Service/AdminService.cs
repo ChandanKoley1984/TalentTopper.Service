@@ -12,7 +12,7 @@ namespace Talent.Topper.WebAPI.Service
     {
         HttpResponseMessage CreateCompany(CompanyEntity companyEntity);
         HttpResponseMessage GetCompany(string id);
-        HttpResponseMessage CreateBranch();
+        HttpResponseMessage CreateBranch(BranchEntity companyEntity);
         HttpResponseMessage GetBranch(string id);
     }
 }
