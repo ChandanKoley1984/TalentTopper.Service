@@ -34,7 +34,11 @@ namespace Talent.Topper.WebAPI.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
-
+       /// <summary>
+       /// create company
+       /// </summary>
+       /// <param name="companyEntity"></param>
+       /// <returns></returns>
         [HttpPost]
         public HttpResponseMessage CreateCompany([FromBody] CompanyEntity companyEntity)
         {
