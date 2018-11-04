@@ -217,6 +217,7 @@
     <Compile Include="Helpers\AdminServiceHelper.cs" />
     <Compile Include="Models\BranchEntity.cs" />
     <Compile Include="Models\CompanyEntity.cs" />
+    <Compile Include="Models\GeneratedIDEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AdminService.cs" />
   </ItemGroup>

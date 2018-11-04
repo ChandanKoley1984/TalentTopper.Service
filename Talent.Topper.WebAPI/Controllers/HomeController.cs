@@ -23,7 +23,7 @@ namespace Talent.Topper.WebAPI.Controllers
             FilterDefinition<BsonDocument> filterDefinition = new BsonDocument("Name", "Name 1");
             //var filter = Builders<CompanyMaster>.Filter.Eq(x => x.Name, "Name 1");
             //filter = filter & (Builders<CompanyMaster>.Filter.Eq(x => x.Address, "Address 1") | Builders<CompanyMaster>.Filter.Eq(x => x.Mobile, "454541"));
-            companyMasterList = _mongoHelperobj.Select<CompanyMaster>("CompanyMaster", filterDefinition);
+            //companyMasterList = _mongoHelperobj.Select<CompanyMaster>("CompanyMaster", filterDefinition);
             
                 
             //Insert Data           

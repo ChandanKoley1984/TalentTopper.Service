@@ -23,5 +23,12 @@ namespace Talent.Topper.WebAPI.Helpers
             List<BranchEntity> branchMasterList = _mongoHelperobj.SelectAll<BranchEntity>("BranchMaster");
             return branchMasterList;
         }
+        internal static List<GeneratedIDEntity> GetGeneratedIDsList(int companyID = 0)
+        {
+            //call Database
+            MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+            List<GeneratedIDEntity> IDMasterList = _mongoHelperobj.SelectAll<GeneratedIDEntity>("IDMaster");
+            return IDMasterList;
+        }
     }
 }

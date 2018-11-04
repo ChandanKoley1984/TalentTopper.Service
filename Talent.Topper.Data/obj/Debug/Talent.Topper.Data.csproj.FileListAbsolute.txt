@@ -10,6 +10,5 @@ E:\subhasis\TTService\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
 E:\subhasis\TTService\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.pdb
-E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb

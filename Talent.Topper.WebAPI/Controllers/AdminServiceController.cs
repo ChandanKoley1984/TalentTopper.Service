@@ -119,5 +119,60 @@ namespace Talent.Topper.WebAPI.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        /// <summary>
+        /// create company
+        /// </summary>
+        /// <param name="GeneratedIDEntity"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public HttpResponseMessage CreateIDs([FromBody] GeneratedIDEntity generatedIDEntity)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+            try
+            {
+                MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+                List<GeneratedIDEntity> IDMasterList = new List<GeneratedIDEntity>();
+                IDMasterList.Add(generatedIDEntity);
+
+                bool data = _mongoHelperobj.InsertMany("IDMaster", IDMasterList);
+
+                if (data)
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Unable to save data");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        [HttpGet]
+        public HttpResponseMessage GetGeneratedIDs(string id)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+            try
+            {
+                List<GeneratedIDEntity> _GeneratedIDEntity = new List<GeneratedIDEntity>();
+
+                _GeneratedIDEntity = AdminServiceHelper.GetGeneratedIDsList();
+
+                if (_GeneratedIDEntity != null)
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.OK, _GeneratedIDEntity);
+                }
+                else
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }
