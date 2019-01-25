@@ -174,5 +174,32 @@ namespace Talent.Topper.WebAPI.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+
+
+
+        [HttpGet]
+        public HttpResponseMessage GetCountry(string id)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+            try
+            {
+                List<CountryEntity> _CountryEntities = new List<CountryEntity>();
+
+                _CountryEntities = AdminServiceHelper.GetCountryList();
+
+                if (_CountryEntities != null)
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.OK, _CountryEntities);
+                }
+                else
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }

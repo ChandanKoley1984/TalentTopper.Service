@@ -30,5 +30,12 @@ namespace Talent.Topper.WebAPI.Helpers
             List<GeneratedIDEntity> IDMasterList = _mongoHelperobj.SelectAll<GeneratedIDEntity>("IDMaster");
             return IDMasterList;
         }
+        internal static List<CountryEntity> GetCountryList(int CountryID = 0)
+        {
+            //call Database
+            MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+            List<CountryEntity> CountryMasterList = _mongoHelperobj.SelectAll<CountryEntity>("CountryMaster");
+            return CountryMasterList;
+        }
     }
 }
