@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -190,6 +191,31 @@ namespace Talent.Topper.WebAPI.Controllers
                 if (_CountryEntities != null)
                 {
                     return response = Request.CreateResponse(HttpStatusCode.OK, _CountryEntities);
+                }
+                else
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpGet]
+        public HttpResponseMessage GetStateByCountry(string id)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+            try
+            {
+                List<StateByCountryEntity> _StateEntities = new List<StateByCountryEntity>();
+
+                _StateEntities = AdminServiceHelper.GetStateByCountryList(id);
+
+                if (_StateEntities != null)
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.OK, _StateEntities);
                 }
                 else
                 {

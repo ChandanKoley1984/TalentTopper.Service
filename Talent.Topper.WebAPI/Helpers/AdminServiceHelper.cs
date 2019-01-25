@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -34,8 +35,15 @@ namespace Talent.Topper.WebAPI.Helpers
         {
             //call Database
             MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
-            List<CountryEntity> CountryMasterList = _mongoHelperobj.SelectAll<CountryEntity>("CountryMaster");
+            List<CountryEntity> CountryMasterList = _mongoHelperobj.SelectAll<CountryEntity>("CountryMaster").Where(x => x.IsActive == 1).ToList();
             return CountryMasterList;
+        }
+        internal static List<StateByCountryEntity> GetStateByCountryList(string CountryID)
+        {
+            //call Database
+            MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+            List<StateByCountryEntity> StateMasterList = _mongoHelperobj.SelectAll<StateByCountryEntity>("StateMaster").Where(x => x.CountryId == CountryID).ToList();
+            return StateMasterList;
         }
     }
 }
