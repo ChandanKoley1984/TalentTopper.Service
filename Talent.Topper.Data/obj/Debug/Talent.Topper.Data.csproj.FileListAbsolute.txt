@@ -17,3 +17,4 @@ A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.pdb
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
