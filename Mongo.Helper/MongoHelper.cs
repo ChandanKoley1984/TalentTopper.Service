@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace MongoHelper
 {
     public class MongoHelper : IDisposable
@@ -13,17 +14,22 @@ namespace MongoHelper
         protected static IMongoClient _client;
         protected static IMongoDatabase _database;
         protected static ILogger _logger;
-
+       // string connectionString = "mongodb://208.78.220.99:27017/";
+        string connectionString = "mongodb://localhost";
         #region Constructors
         public MongoHelper(string dbname)
         {
-            _client = new MongoClient();
+
+
+
+
+            _client = new MongoClient(connectionString);
             _database = _client.GetDatabase(dbname);
         }
 
         public MongoHelper(string dbname, ILogger log)
         {
-            _client = new MongoClient();
+            _client = new MongoClient(connectionString);
             _database = _client.GetDatabase(dbname);
             _logger = log;
         }
@@ -322,4 +328,7 @@ namespace MongoHelper
             GC.SuppressFinalize(this);
         }
     }
+
+
+      
 }
