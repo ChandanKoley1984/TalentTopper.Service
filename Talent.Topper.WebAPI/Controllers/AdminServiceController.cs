@@ -227,5 +227,31 @@ namespace Talent.Topper.WebAPI.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+
+
+        [HttpGet]
+        public HttpResponseMessage SearchCompanyList(string id)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+            try
+            {
+                List<CompanyEntity> _companyEntitys = new List<CompanyEntity>();
+
+                _companyEntitys = AdminServiceHelper.SearchCompanyList(id);
+
+                if (_companyEntitys != null)
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.OK, _companyEntitys);
+                }
+                else
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }

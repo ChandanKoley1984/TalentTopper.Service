@@ -45,5 +45,12 @@ namespace Talent.Topper.WebAPI.Helpers
             List<StateByCountryEntity> StateMasterList = _mongoHelperobj.SelectAll<StateByCountryEntity>("StateMaster").Where(x => x.CountryId == CountryID).ToList();
             return StateMasterList;
         }
+        internal static List<CompanyEntity> SearchCompanyList(string name)
+        {
+            //call Database
+            MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+            List<CompanyEntity> StateMasterList = _mongoHelperobj.SelectAll<CompanyEntity>("CompanyMaster").Where(x => x.CompanayName == name ||  x.Email == name || x.WebsiteURL == name).ToList();
+            return StateMasterList;
+        }
     }
 }
