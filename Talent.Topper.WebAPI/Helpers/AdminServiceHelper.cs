@@ -49,8 +49,16 @@ namespace Talent.Topper.WebAPI.Helpers
         {
             //call Database
             MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
-            List<CompanyEntity> StateMasterList = _mongoHelperobj.SelectAll<CompanyEntity>("CompanyMaster").Where(x => x.CompanayName == name ||  x.Email == name || x.WebsiteURL == name).ToList();
-            return StateMasterList;
+            if (name != "")
+            {
+                List<CompanyEntity> StateMasterList = _mongoHelperobj.SelectAll<CompanyEntity>("CompanyMaster").Where(x => (x.CompanayName == name) || (x.Email == name) || (x.WebsiteURL == name)).ToList();
+                return StateMasterList;
+            }
+            else
+            {
+                List<CompanyEntity> StateMasterList = _mongoHelperobj.SelectAll<CompanyEntity>("CompanyMaster").ToList();
+                return StateMasterList;
+            }
         }
     }
 }
