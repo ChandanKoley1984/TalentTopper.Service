@@ -27,5 +27,6 @@ namespace Talent.Topper.WebAPI.Models
         public string Password { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
+        public int? IsActive { get; set; }
     }
 }
