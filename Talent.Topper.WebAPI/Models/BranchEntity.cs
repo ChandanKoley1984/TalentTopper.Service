@@ -7,6 +7,7 @@ namespace Talent.Topper.WebAPI.Models
     public class BranchEntity
     {
         [BsonId]
+        [BsonElement("_id")]
         public ObjectId ID { get; set; }
         public int CompanyID { get; set; }
         public string BranchName { get; set; }
@@ -16,8 +17,8 @@ namespace Talent.Topper.WebAPI.Models
         public string BranchPhoneNo { get; set; }
         public string BranchEmailID { get; set; }
         public string City { get; set; }
-        public int StateID { get; set; }
-        public int CountryID { get; set; }
+        public string StateID { get; set; }
+        public string CountryID { get; set; }
         public DateTime? CreateDate { get; set; }
         public DateTime? UpdateDate { get; set; }
         public int? Status { get; set; }

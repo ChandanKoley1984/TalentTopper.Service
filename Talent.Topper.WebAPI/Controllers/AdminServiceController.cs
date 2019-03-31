@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,7 +80,7 @@ namespace Talent.Topper.WebAPI.Controllers
             {
                 List<BranchEntity> _branchEntities = new List<BranchEntity>();
 
-                _branchEntities = AdminServiceHelper.GetBranchList();
+                _branchEntities = AdminServiceHelper.GetBranchList(id);
 
                 if (_branchEntities != null)
                 {
@@ -88,6 +89,33 @@ namespace Talent.Topper.WebAPI.Controllers
                 else
                 {
                     return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public HttpResponseMessage EditBranch([FromBody] BranchEntity branchEntity)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+            try
+            {
+                MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
+
+                FilterDefinition<BsonDocument> filter = "ID";
+
+                bool data = _mongoHelperobj.UpdateOne("BranchMaster", filter, branchEntity.ToBsonDocument());
+
+                if (data)
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Unable to save data");
                 }
             }
             catch (Exception ex)

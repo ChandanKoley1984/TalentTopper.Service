@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,11 +18,22 @@ namespace Talent.Topper.WebAPI.Helpers
             return companyMasterList;
         }
 
-        internal static List<BranchEntity> GetBranchList(int companyID = 0)
+        internal static List<BranchEntity> GetBranchList(string id = "")
         {
             //call Database
             MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
-            List<BranchEntity> branchMasterList = _mongoHelperobj.SelectAll<BranchEntity>("BranchMaster");
+            List<BranchEntity> branchMasterList = new List<BranchEntity>();
+            BranchEntity _branchEntity = new BranchEntity();
+            if (id== "GetAll")
+                branchMasterList = _mongoHelperobj.SelectAll<BranchEntity>("BranchMaster");
+            else
+            {
+                int companyid = 123;
+                FilterDefinition<BsonDocument> filter = "{ CompanyID:" + companyid + "}";
+                //var query_id = Query.EQ("_id", ObjectId.Parse("50ed4e7d5baffd13a44d0153"));
+                _branchEntity = _mongoHelperobj.SelectOne<BranchEntity>("BranchMaster", filter);
+                branchMasterList.Add(_branchEntity);
+            }
             return branchMasterList;
         }
         internal static List<GeneratedIDEntity> GetGeneratedIDsList(int companyID = 0)
