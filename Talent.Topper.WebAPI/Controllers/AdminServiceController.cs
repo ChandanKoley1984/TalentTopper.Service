@@ -105,7 +105,9 @@ namespace Talent.Topper.WebAPI.Controllers
             {
                 MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
 
-                FilterDefinition<BsonDocument> filter = "ID";
+                //FilterDefinition<BsonDocument> filter = "_id:"+ branchEntity.id;
+               
+                FilterDefinition<BsonDocument> filter = new BsonDocument("_id", branchEntity.BsonId);
 
                 bool data = _mongoHelperobj.UpdateOne("BranchMaster", filter, branchEntity.ToBsonDocument());
 

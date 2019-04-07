@@ -23,17 +23,19 @@ namespace Talent.Topper.WebAPI.Helpers
             //call Database
             MongoHelper.MongoHelper _mongoHelperobj = new MongoHelper.MongoHelper("TalentTopper");
             List<BranchEntity> branchMasterList = new List<BranchEntity>();
+            List<BranchEntity> branchMasterFinalList = new List<BranchEntity>();
             BranchEntity _branchEntity = new BranchEntity();
-            if (id== "GetAll")
-                branchMasterList = _mongoHelperobj.SelectAll<BranchEntity>("BranchMaster");
-            else
+            branchMasterList = _mongoHelperobj.SelectAll<BranchEntity>("BranchMaster");
+            if (!id.Equals("GetAll"))
             {
-                int companyid = 123;
-                FilterDefinition<BsonDocument> filter = "{ CompanyID:" + companyid + "}";
-                //var query_id = Query.EQ("_id", ObjectId.Parse("50ed4e7d5baffd13a44d0153"));
-                _branchEntity = _mongoHelperobj.SelectOne<BranchEntity>("BranchMaster", filter);
-                branchMasterList.Add(_branchEntity);
+                branchMasterList = branchMasterList.Where(a => a.BsonId.ToString() == id).ToList();
             }
+            foreach(BranchEntity be in branchMasterList)
+            {
+                be.id = be.BsonId.ToString();
+                branchMasterFinalList.Add(be);
+            }
+
             return branchMasterList;
         }
         internal static List<GeneratedIDEntity> GetGeneratedIDsList(int companyID = 0)

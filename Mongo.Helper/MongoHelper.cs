@@ -233,7 +233,7 @@ namespace MongoHelper
                 collection.UpdateOne(filter, update);
                 return true;
             }
-            catch
+            catch(Exception ex)
             {
                 return false;
             }

@@ -6,10 +6,15 @@ namespace Talent.Topper.WebAPI.Models
 {
     public class BranchEntity
     {
-        [BsonId]
-        [BsonElement("_id")]
-        public ObjectId ID { get; set; }
+        [BsonId]  
+        [BsonElement("_id")]      
+        public ObjectId BsonId { get; set; }
+
+        public string id { get; set; }
+
+        [BsonElement("CompanyID")]
         public int CompanyID { get; set; }
+        
         public string BranchName { get; set; }
         public string HOB { get; set; }
         public string BranchAddress { get; set; }
