@@ -19,14 +19,9 @@ namespace MongoHelper
         #region Constructors
         public MongoHelper(string dbname)
         {
-
-
-
-
             _client = new MongoClient(connectionString);
             _database = _client.GetDatabase(dbname);
         }
-
         public MongoHelper(string dbname, ILogger log)
         {
             _client = new MongoClient(connectionString);
@@ -144,6 +139,7 @@ namespace MongoHelper
         /// <returns></returns>
         public T SelectOne<T>(string collectionName, FilterDefinition<BsonDocument> filter)
         {
+            
             var collection = _database.GetCollection<BsonDocument>(collectionName);
             var result = collection.Find(filter).ToList();
             if (result.Count > 1)
@@ -237,7 +233,7 @@ namespace MongoHelper
                 collection.UpdateOne(filter, update);
                 return true;
             }
-            catch
+            catch(Exception ex)
             {
                 return false;
             }
