@@ -148,3 +148,5 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Antlr3.Runtime.pdb
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.pdb
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.dll
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.xml

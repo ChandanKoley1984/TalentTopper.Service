@@ -9,8 +9,8 @@ namespace Talent.Topper.Data
     public class DBFunctions
     {
         
-        string conString = ConfigurationManager.ConnectionStrings["TalentCon"].ToString();
-        public SqlConnection cvCon = new SqlConnection(ConfigurationManager.ConnectionStrings["TalentCon"].ToString());
+        string conString = ConfigurationManager.ConnectionStrings["TalentTopperEntities"].ToString();
+        public SqlConnection cvCon = new SqlConnection(ConfigurationManager.ConnectionStrings["TalentTopperEntities"].ToString());
         private SqlCommand lvCom;
         public SqlDataReader lvRed;
         public String VarHoldOption;
@@ -130,7 +130,7 @@ namespace Talent.Topper.Data
         public SqlDataReader RunQuery(string query)
         {
             SqlDataReader dr = null;
-            SqlConnection cvCon = new SqlConnection(ConfigurationManager.ConnectionStrings["KMITimesheet"].ToString());
+            SqlConnection cvCon = new SqlConnection(ConfigurationManager.ConnectionStrings["TalentTopperEntities"].ToString());
             SqlCommand cmd = new SqlCommand(query, cvCon);
             cmd.CommandType = CommandType.Text;
 
