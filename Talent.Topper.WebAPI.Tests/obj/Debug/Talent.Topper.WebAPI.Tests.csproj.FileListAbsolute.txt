@@ -175,6 +175,7 @@ E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Deb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csprojResolveAssemblyReference.cache
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\ApplicationInsights.config
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\roslyn\csc.exe
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -187,7 +188,6 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\roslyn\System.R
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\roslyn\vbc.exe
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\roslyn\VBCSCompiler.exe
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\ApplicationInsights.config
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.WebAPI.Tests.dll.config
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.WebAPI.Tests.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.WebAPI.Tests.pdb
