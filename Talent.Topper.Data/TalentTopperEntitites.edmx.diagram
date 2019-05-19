@@ -5,8 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="2a4f2df241644bf9b8f895a8c9352393" Name="Diagram1">
-        <EntityTypeShape EntityType="TalentTopperDB.Branch" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TalentTopperDB.Company" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalentTopperDB.CountryMaster" Width="1.5" PointX="3.375" PointY="4.75" />
+        <EntityTypeShape EntityType="TalentTopperDB.IDMaster" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="TalentTopperDB.StateMaster" Width="1.5" PointX="5.375" PointY="4.75" />
+        <EntityTypeShape EntityType="TalentTopperDB.Branch" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="TalentTopperDB.Company" Width="1.5" PointX="0.75" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

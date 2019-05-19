@@ -25,6 +25,9 @@ namespace Talent.Topper.Data
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<CountryMaster> CountryMasters { get; set; }
+        public virtual DbSet<IDMaster> IDMasters { get; set; }
+        public virtual DbSet<StateMaster> StateMasters { get; set; }
         public virtual DbSet<Branch> Branches { get; set; }
         public virtual DbSet<Company> Companies { get; set; }
     }

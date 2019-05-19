@@ -15,12 +15,22 @@ namespace Talent.Topper.Data
     public partial class Company
     {
         public int CompanyId { get; set; }
-        public string CompanyFName { get; set; }
-        public string CompanySName { get; set; }
-        public string CompanyAddress { get; set; }
-        public Nullable<int> CompanyIsVisible { get; set; }
-        public string CompanyeMail { get; set; }
-        public string CompanyWebsite { get; set; }
-        public int RecordStatus { get; set; }
+        public string CompanayName { get; set; }
+        public string FullAddress { get; set; }
+        public string CountryCode { get; set; }
+        public string MobileNo { get; set; }
+        public string PhoneNo { get; set; }
+        public string Email { get; set; }
+        public string WebsiteURL { get; set; }
+        public string Logo { get; set; }
+        public string CEOName { get; set; }
+        public Nullable<int> CountryID { get; set; }
+        public Nullable<int> StateID { get; set; }
+        public string City { get; set; }
+        public string ComapanyType { get; set; }
+        public string Password { get; set; }
+        public Nullable<int> CreatedBy { get; set; }
+        public Nullable<System.DateTime> CreatedOn { get; set; }
+        public Nullable<bool> IsActive { get; set; }
     }
 }

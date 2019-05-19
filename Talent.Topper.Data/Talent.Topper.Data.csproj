@@ -58,8 +58,18 @@
     <Compile Include="Company.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
     </Compile>
+    <Compile Include="CompanyDataAccessLayer.cs" />
+    <Compile Include="CountryMaster.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
     <Compile Include="DBFunctions.cs" />
+    <Compile Include="IDMaster.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateMaster.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
     <Compile Include="TalentTopperEntitites.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
