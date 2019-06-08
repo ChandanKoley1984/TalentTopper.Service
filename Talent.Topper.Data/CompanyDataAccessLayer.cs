@@ -32,10 +32,11 @@ namespace Talent.Topper.Data
         /// <param name="_company"></param>
         /// <returns></returns>
         public int CreateCompany(Company _company)
-        {
-            _dbContext.Entry(_company).State = EntityState.Modified;
+        {            
             _dbContext.Companies.Add(_company);
-           
+            if (_company.CompanyId > 0)
+                _dbContext.Entry(_company).State = EntityState.Modified;
+
             int saveStatus = _dbContext.SaveChanges();
             return saveStatus;
         }
