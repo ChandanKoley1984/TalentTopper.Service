@@ -12,18 +12,22 @@ namespace Talent.Topper.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class BRANCH
+    public partial class CONTACT
     {
         public long ID { get; set; }
         public string Name { get; set; }
-        public string HODName { get; set; }
-        public string LogoPath { get; set; }
-        public Nullable<int> Company_ID { get; set; }
-        public Nullable<long> Contact_Id { get; set; }
+        public Nullable<int> RoleId { get; set; }
+        public string MobileNo { get; set; }
+        public string PhoneNo { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Gender { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> UpdatedDate { get; set; }
         public Nullable<int> UpdatedBy { get; set; }
+        public Nullable<long> Company_ID { get; set; }
+        public Nullable<long> Branch_ID { get; set; }
     }
 }

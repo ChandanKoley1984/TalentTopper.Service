@@ -12,25 +12,19 @@ namespace Talent.Topper.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class Company
+    public partial class COMPANY
     {
-        public int CompanyId { get; set; }
-        public string CompanayName { get; set; }
-        public string FullAddress { get; set; }
-        public string CountryCode { get; set; }
-        public string MobileNo { get; set; }
-        public string PhoneNo { get; set; }
-        public string Email { get; set; }
-        public string WebsiteURL { get; set; }
-        public string Logo { get; set; }
+        public long ID { get; set; }
+        public string CompanyName { get; set; }
         public string CEOName { get; set; }
-        public Nullable<int> CountryID { get; set; }
-        public Nullable<int> StateID { get; set; }
-        public string City { get; set; }
-        public string ComapanyType { get; set; }
-        public string Password { get; set; }
-        public Nullable<int> CreatedBy { get; set; }
-        public Nullable<System.DateTime> CreatedOn { get; set; }
+        public string WebsiteUrl { get; set; }
+        public string LogoPath { get; set; }
+        public Nullable<long> Contact_Id { get; set; }
         public Nullable<bool> IsActive { get; set; }
+        public Nullable<System.DateTime> CreatedDate { get; set; }
+        public Nullable<int> CreatedBy { get; set; }
+        public Nullable<System.DateTime> UpdatedDate { get; set; }
+        public Nullable<int> UpdatedBy { get; set; }
+        public string CompanyType { get; set; }
     }
 }

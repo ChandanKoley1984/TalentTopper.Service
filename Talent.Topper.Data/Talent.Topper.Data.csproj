@@ -52,22 +52,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Branch.cs">
+    <Compile Include="ADDRESS.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
     </Compile>
-    <Compile Include="Company.cs">
+    <Compile Include="BRANCH.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMPANY.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
     </Compile>
     <Compile Include="CompanyDataAccessLayer.cs" />
-    <Compile Include="CountryMaster.cs">
+    <Compile Include="CONTACT.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COUNTRY_MASTER.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
     </Compile>
     <Compile Include="DBFunctions.cs" />
+    <Compile Include="DISTRICT_MASTER.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
     <Compile Include="IDMaster.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
     </Compile>
+    <Compile Include="LOG_COUNT.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_MASTER.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StateMaster.cs">
+    <Compile Include="ROLE.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ROLE_PERMISSION.cs">
+      <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STATE_MASTER.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
     </Compile>
     <Compile Include="TalentTopperEntitites.Context.cs">

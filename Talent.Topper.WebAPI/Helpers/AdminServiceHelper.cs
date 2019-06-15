@@ -12,7 +12,7 @@ namespace Talent.Topper.WebAPI.Helpers
     public class AdminServiceHelper
     {
         CompanyDataAccessLayer _companyDataAccessLayer = new CompanyDataAccessLayer();
-        internal List<Company> GetCompanies(int? companyID = null)
+        internal List<COMPANY> GetCompanies(int? companyID = null)
         {
             return _companyDataAccessLayer.GetCompanies(companyID).ToList();           
         }

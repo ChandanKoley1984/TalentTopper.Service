@@ -12,11 +12,11 @@ namespace Talent.Topper.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class CountryMaster
+    public partial class COUNTRY_MASTER
     {
-        public long id { get; set; }
-        public string CountryName { get; set; }
-        public Nullable<bool> IsActive { get; set; }
-        public Nullable<System.DateTime> CreatedOn { get; set; }
+        public int ID { get; set; }
+        public string NAME { get; set; }
+        public string CODE { get; set; }
+        public int STATUS { get; set; }
     }
 }

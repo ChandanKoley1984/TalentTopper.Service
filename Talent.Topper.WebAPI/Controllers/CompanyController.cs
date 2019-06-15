@@ -20,7 +20,7 @@ namespace Talent.Topper.WebAPI.Controllers
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
-                List<Company> _companyEntitys = new List<Company>();
+                List<COMPANY> _companyEntitys = new List<COMPANY>();
 
                 _companyEntitys = _companyHelper.GetCompanies(id);
 
@@ -44,7 +44,7 @@ namespace Talent.Topper.WebAPI.Controllers
         /// <param name="generatedIDEntity"></param>
         /// <returns></returns>
         [HttpPost]
-        public HttpResponseMessage CreateCompany([FromBody] Company _company)
+        public HttpResponseMessage CreateCompany([FromBody] COMPANY _company)
         {
             HttpResponseMessage response = new HttpResponseMessage();
             try

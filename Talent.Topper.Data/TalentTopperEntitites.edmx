@@ -5,64 +5,109 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="TalentTopperDB.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Branches">
-          <Key>
-            <PropertyRef Name="BranchID" />
-          </Key>
-          <Property Name="BranchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="BranchName" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Company_ID" Type="int" />
-          <Property Name="HOB" Type="nvarchar(max)" />
-          <Property Name="BranchAddress" Type="nvarchar(max)" />
-          <Property Name="MobileCode" Type="varchar" MaxLength="50" />
-          <Property Name="BranchMobileNo" Type="nvarchar(max)" />
-          <Property Name="PhoneCode" Type="varchar" MaxLength="50" />
-          <Property Name="BranchPhoneNo" Type="nvarchar(max)" />
-          <Property Name="BranchEmailID" Type="nvarchar(max)" />
-          <Property Name="BranchStrengh" Type="int" />
-          <Property Name="City" Type="nvarchar(max)" />
-          <Property Name="State" Type="nvarchar(max)" />
-          <Property Name="Country" Type="nvarchar(max)" />
-          <Property Name="CreateDate" Type="date" />
-          <Property Name="Creator" Type="nvarchar(max)" />
-          <Property Name="Status" Type="int" />
-          <Property Name="Website" Type="nvarchar(max)" />
-          <Property Name="ActivationCode" Type="nvarchar" MaxLength="50" />
-          <Property Name="Logo" Type="varchar" MaxLength="100" />
-          <Property Name="IS_DELETED" Type="bit" />
-          <Property Name="IS_ACTIVE" Type="bit" />
-        </EntityType>
-        <EntityType Name="Companies">
-          <Key>
-            <PropertyRef Name="CompanyId" />
-          </Key>
-          <Property Name="CompanyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="CompanayName" Type="nvarchar" MaxLength="255" />
-          <Property Name="FullAddress" Type="nvarchar" MaxLength="255" />
-          <Property Name="CountryCode" Type="nvarchar" MaxLength="10" />
-          <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
-          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
-          <Property Name="Email" Type="nvarchar" MaxLength="50" />
-          <Property Name="WebsiteURL" Type="nvarchar" MaxLength="100" />
-          <Property Name="Logo" Type="nvarchar" MaxLength="255" />
-          <Property Name="CEOName" Type="nvarchar" MaxLength="255" />
-          <Property Name="CountryID" Type="int" />
-          <Property Name="StateID" Type="int" />
-          <Property Name="City" Type="nvarchar" MaxLength="255" />
-          <Property Name="ComapanyType" Type="nvarchar" MaxLength="255" />
-          <Property Name="Password" Type="nvarchar" MaxLength="255" />
-          <Property Name="CreatedBy" Type="int" />
-          <Property Name="CreatedOn" Type="datetime" />
-          <Property Name="IsActive" Type="bit" />
-        </EntityType>
-        <EntityType Name="CountryMaster">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'sandeep.dbo.ADDRESS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ADDRESS">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="CountryName" Type="nvarchar" MaxLength="255" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" />
+          <Property Name="addressline" Type="nvarchar" MaxLength="255" />
+          <Property Name="city" Type="nvarchar" MaxLength="255" />
+          <Property Name="district_id" Type="int" />
+          <Property Name="state_id" Type="int" />
+          <Property Name="country_id" Type="int" />
+          <Property Name="pincode" Type="nvarchar" MaxLength="100" />
+          <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Contact_id" Type="int" />
           <Property Name="IsActive" Type="bit" />
-          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="Company_ID" Type="bigint" />
+          <Property Name="Branch_ID" Type="bigint" />
+          <Property Name="is_default" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'sandeep.dbo.BRANCH' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="BRANCH">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="HODName" Type="nvarchar(max)" />
+          <Property Name="LogoPath" Type="nvarchar(max)" />
+          <Property Name="Company_ID" Type="int" />
+          <Property Name="Contact_Id" Type="bigint" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'sandeep.dbo.COMPANY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="COMPANY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="nvarchar(max)" />
+          <Property Name="CEOName" Type="nvarchar(max)" />
+          <Property Name="WebsiteUrl" Type="nvarchar(max)" />
+          <Property Name="LogoPath" Type="nvarchar(max)" />
+          <Property Name="Contact_Id" Type="bigint" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="CompanyType" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'sandeep.dbo.CONTACT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CONTACT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="RoleId" Type="int" />
+          <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="Company_ID" Type="bigint" />
+          <Property Name="Branch_ID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="COUNTRY_MASTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="CODE" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="STATUS" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DISTRICT_MASTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="STATE_ID" Type="int" />
+          <Property Name="NAME" Type="varchar" MaxLength="100" />
+          <Property Name="STATUS" Type="int" />
         </EntityType>
         <EntityType Name="IDMaster">
           <Key>
@@ -80,42 +125,212 @@
           <Property Name="UpdateDate" Type="datetime" />
           <Property Name="UpdateBy" Type="bigint" />
         </EntityType>
-        <EntityType Name="StateMaster">
+        <EntityType Name="LOG_COUNT">
           <Key>
-            <PropertyRef Name="id" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="CountryId" Type="bigint" />
-          <Property Name="StateName" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USER_ID" Type="nvarchar" MaxLength="500" />
+          <Property Name="LOG_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="MENU_MASTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MenuName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentID" Type="bigint" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+          <Property Name="Url" Type="nvarchar" MaxLength="256" />
+          <Property Name="Icon" Type="nvarchar" MaxLength="50" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="256" />
+          <Property Name="Created_Date" Type="datetime" />
+          <Property Name="Updated_By" Type="nvarchar" MaxLength="256" />
+          <Property Name="Updated_Date" Type="datetime" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="SL_NO" Type="int" />
+        </EntityType>
+        <EntityType Name="ROLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Short_Name" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
           <Property Name="IsActive" Type="bit" />
-          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="Company_ID" Type="bigint" />
+          <Property Name="Branch_ID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="ROLE_PERMISSION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MenuID" Type="bigint" />
+          <Property Name="RoleID" Type="bigint" />
+          <Property Name="B_Add" Type="bit" />
+          <Property Name="B_Edit" Type="bit" />
+          <Property Name="B_Delete" Type="bit" />
+          <Property Name="B_View" Type="bit" />
+          <Property Name="B_Payment" Type="bit" />
+          <Property Name="Prient" Type="bit" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="Company_Id" Type="int" />
+          <Property Name="Branch_Id" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="STATE_MASTER">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="NAME" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="STATUS" Type="int" />
+          <Property Name="COUNTRY_ID" Type="int" />
         </EntityType>
         <EntityContainer Name="TalentTopperDBStoreContainer">
-          <EntitySet Name="Branches" EntityType="Self.Branches" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="CountryMaster" EntityType="Self.CountryMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="COUNTRY_MASTER" EntityType="Self.COUNTRY_MASTER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DISTRICT_MASTER" EntityType="Self.DISTRICT_MASTER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IDMaster" EntityType="Self.IDMaster" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="StateMaster" EntityType="Self.StateMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LOG_COUNT" EntityType="Self.LOG_COUNT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MENU_MASTER" EntityType="Self.MENU_MASTER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROLE" EntityType="Self.ROLE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROLE_PERMISSION" EntityType="Self.ROLE_PERMISSION" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ADDRESS" EntityType="Self.ADDRESS" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ADDRESS].[id] AS [id], 
+    [ADDRESS].[name] AS [name], 
+    [ADDRESS].[addressline] AS [addressline], 
+    [ADDRESS].[city] AS [city], 
+    [ADDRESS].[district_id] AS [district_id], 
+    [ADDRESS].[state_id] AS [state_id], 
+    [ADDRESS].[country_id] AS [country_id], 
+    [ADDRESS].[pincode] AS [pincode], 
+    [ADDRESS].[MobileNo] AS [MobileNo], 
+    [ADDRESS].[PhoneNo] AS [PhoneNo], 
+    [ADDRESS].[Email] AS [Email], 
+    [ADDRESS].[Contact_id] AS [Contact_id], 
+    [ADDRESS].[IsActive] AS [IsActive], 
+    [ADDRESS].[CreatedDate] AS [CreatedDate], 
+    [ADDRESS].[CreatedBy] AS [CreatedBy], 
+    [ADDRESS].[UpdatedDate] AS [UpdatedDate], 
+    [ADDRESS].[UpdatedBy] AS [UpdatedBy], 
+    [ADDRESS].[Company_ID] AS [Company_ID], 
+    [ADDRESS].[Branch_ID] AS [Branch_ID], 
+    [ADDRESS].[is_default] AS [is_default]
+    FROM [dbo].[ADDRESS] AS [ADDRESS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="BRANCH" EntityType="Self.BRANCH" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [BRANCH].[ID] AS [ID], 
+    [BRANCH].[Name] AS [Name], 
+    [BRANCH].[HODName] AS [HODName], 
+    [BRANCH].[LogoPath] AS [LogoPath], 
+    [BRANCH].[Company_ID] AS [Company_ID], 
+    [BRANCH].[Contact_Id] AS [Contact_Id], 
+    [BRANCH].[IsActive] AS [IsActive], 
+    [BRANCH].[CreatedDate] AS [CreatedDate], 
+    [BRANCH].[CreatedBy] AS [CreatedBy], 
+    [BRANCH].[UpdatedDate] AS [UpdatedDate], 
+    [BRANCH].[UpdatedBy] AS [UpdatedBy]
+    FROM [dbo].[BRANCH] AS [BRANCH]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="COMPANY" EntityType="Self.COMPANY" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [COMPANY].[ID] AS [ID], 
+    [COMPANY].[CompanyName] AS [CompanyName], 
+    [COMPANY].[CEOName] AS [CEOName], 
+    [COMPANY].[WebsiteUrl] AS [WebsiteUrl], 
+    [COMPANY].[LogoPath] AS [LogoPath], 
+    [COMPANY].[Contact_Id] AS [Contact_Id], 
+    [COMPANY].[IsActive] AS [IsActive], 
+    [COMPANY].[CreatedDate] AS [CreatedDate], 
+    [COMPANY].[CreatedBy] AS [CreatedBy], 
+    [COMPANY].[UpdatedDate] AS [UpdatedDate], 
+    [COMPANY].[UpdatedBy] AS [UpdatedBy], 
+    [COMPANY].[CompanyType] AS [CompanyType]
+    FROM [dbo].[COMPANY] AS [COMPANY]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CONTACT" EntityType="Self.CONTACT" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CONTACT].[ID] AS [ID], 
+    [CONTACT].[Name] AS [Name], 
+    [CONTACT].[RoleId] AS [RoleId], 
+    [CONTACT].[MobileNo] AS [MobileNo], 
+    [CONTACT].[PhoneNo] AS [PhoneNo], 
+    [CONTACT].[Email] AS [Email], 
+    [CONTACT].[Password] AS [Password], 
+    [CONTACT].[Gender] AS [Gender], 
+    [CONTACT].[IsActive] AS [IsActive], 
+    [CONTACT].[CreatedDate] AS [CreatedDate], 
+    [CONTACT].[CreatedBy] AS [CreatedBy], 
+    [CONTACT].[UpdatedDate] AS [UpdatedDate], 
+    [CONTACT].[UpdatedBy] AS [UpdatedBy], 
+    [CONTACT].[Company_ID] AS [Company_ID], 
+    [CONTACT].[Branch_ID] AS [Branch_ID]
+    FROM [dbo].[CONTACT] AS [CONTACT]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="STATE_MASTER" EntityType="Self.STATE_MASTER" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [STATE_MASTER].[ID] AS [ID], 
+    [STATE_MASTER].[NAME] AS [NAME], 
+    [STATE_MASTER].[STATUS] AS [STATUS], 
+    [STATE_MASTER].[COUNTRY_ID] AS [COUNTRY_ID]
+    FROM [dbo].[STATE_MASTER] AS [STATE_MASTER]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TalentTopperDB" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="TalentTopperEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="CountryMasters" EntityType="TalentTopperDB.CountryMaster" />
+          <EntitySet Name="STATE_MASTER" EntityType="TalentTopperDB.STATE_MASTER" />
+          <EntitySet Name="COUNTRY_MASTER" EntityType="TalentTopperDB.COUNTRY_MASTER" />
+          <EntitySet Name="DISTRICT_MASTER" EntityType="TalentTopperDB.DISTRICT_MASTER" />
           <EntitySet Name="IDMasters" EntityType="TalentTopperDB.IDMaster" />
-          <EntitySet Name="StateMasters" EntityType="TalentTopperDB.StateMaster" />
-          <EntitySet Name="Branches" EntityType="TalentTopperDB.Branch" />
-          <EntitySet Name="Companies" EntityType="TalentTopperDB.Company" />
+          <EntitySet Name="LOG_COUNT" EntityType="TalentTopperDB.LOG_COUNT" />
+          <EntitySet Name="MENU_MASTER" EntityType="TalentTopperDB.MENU_MASTER" />
+          <EntitySet Name="ROLEs" EntityType="TalentTopperDB.ROLE" />
+          <EntitySet Name="ROLE_PERMISSION" EntityType="TalentTopperDB.ROLE_PERMISSION" />
+          <EntitySet Name="ADDRESSes" EntityType="TalentTopperDB.ADDRESS" />
+          <EntitySet Name="CONTACTs" EntityType="TalentTopperDB.CONTACT" />
+          <EntitySet Name="BRANCHes" EntityType="TalentTopperDB.BRANCH" />
+          <EntitySet Name="COMPANies" EntityType="TalentTopperDB.COMPANY" />
         </EntityContainer>
-        <EntityType Name="CountryMaster">
+        <EntityType Name="STATE_MASTER">
           <Key>
-            <PropertyRef Name="id" />
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="NAME" />
           </Key>
-          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CountryName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="IsActive" Type="Boolean" />
-          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="Int32" />
+          <Property Name="COUNTRY_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="COUNTRY_MASTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CODE" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="STATUS" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DISTRICT_MASTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="STATE_ID" Type="Int32" />
+          <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="Int32" />
         </EntityType>
         <EntityType Name="IDMaster">
           <Key>
@@ -133,65 +348,141 @@
           <Property Name="UpdateDate" Type="DateTime" Precision="3" />
           <Property Name="UpdateBy" Type="Int64" />
         </EntityType>
-        <EntityType Name="StateMaster">
+        <EntityType Name="LOG_COUNT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="LOG_DATE" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="MENU_MASTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MenuName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ParentID" Type="Int64" />
+          <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Url" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Created_By" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Created_Date" Type="DateTime" Precision="3" />
+          <Property Name="Updated_By" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Updated_Date" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="SL_NO" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ROLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Short_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" />
+          <Property Name="Company_ID" Type="Int64" />
+          <Property Name="Branch_ID" Type="Int64" />
+        </EntityType>
+        <EntityType Name="ROLE_PERMISSION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MenuID" Type="Int64" />
+          <Property Name="RoleID" Type="Int64" />
+          <Property Name="B_Add" Type="Boolean" />
+          <Property Name="B_Edit" Type="Boolean" />
+          <Property Name="B_Delete" Type="Boolean" />
+          <Property Name="B_View" Type="Boolean" />
+          <Property Name="B_Payment" Type="Boolean" />
+          <Property Name="Prient" Type="Boolean" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="Company_Id" Type="Int32" />
+          <Property Name="Branch_Id" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ADDRESS">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CountryId" Type="Int64" />
-          <Property Name="StateName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="IsActive" Type="Boolean" />
-          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
-        </EntityType>
-        <EntityType Name="Branch">
-          <Key>
-            <PropertyRef Name="BranchID" />
-          </Key>
-          <Property Name="BranchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="BranchName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Company_ID" Type="Int32" />
-          <Property Name="HOB" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="BranchAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="MobileCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="BranchMobileNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="PhoneCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="BranchPhoneNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="BranchEmailID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="BranchStrengh" Type="Int32" />
-          <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="State" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreateDate" Type="DateTime" Precision="0" />
-          <Property Name="Creator" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Status" Type="Int32" />
-          <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="ActivationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Logo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="IS_DELETED" Type="Boolean" />
-          <Property Name="IS_ACTIVE" Type="Boolean" />
-        </EntityType>
-        <EntityType Name="Company">
-          <Key>
-            <PropertyRef Name="CompanyId" />
-          </Key>
-          <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CompanayName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="FullAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="CountryCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="addressline" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="city" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="district_id" Type="Int32" />
+          <Property Name="state_id" Type="Int32" />
+          <Property Name="country_id" Type="Int32" />
+          <Property Name="pincode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="WebsiteURL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="Logo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="CEOName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="CountryID" Type="Int32" />
-          <Property Name="StateID" Type="Int32" />
-          <Property Name="City" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="ComapanyType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="CreatedBy" Type="Int32" />
-          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_id" Type="Int32" />
           <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" />
+          <Property Name="Company_ID" Type="Int64" />
+          <Property Name="Branch_ID" Type="Int64" />
+          <Property Name="is_default" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CONTACT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RoleId" Type="Int32" />
+          <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" />
+          <Property Name="Company_ID" Type="Int64" />
+          <Property Name="Branch_ID" Type="Int64" />
+        </EntityType>
+        <EntityType Name="BRANCH">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HODName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LogoPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Company_ID" Type="Int32" />
+          <Property Name="Contact_Id" Type="Int64" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" />
+        </EntityType>
+        <EntityType Name="COMPANY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CEOName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WebsiteUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LogoPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Id" Type="Int64" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" />
+          <Property Name="CompanyType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -199,13 +490,33 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="TalentTopperDBStoreContainer" CdmEntityContainer="TalentTopperEntities">
-          <EntitySetMapping Name="CountryMasters">
-            <EntityTypeMapping TypeName="TalentTopperDB.CountryMaster">
-              <MappingFragment StoreEntitySet="CountryMaster">
-                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
-                <ScalarProperty Name="id" ColumnName="id" />
+          <EntitySetMapping Name="STATE_MASTER">
+            <EntityTypeMapping TypeName="TalentTopperDB.STATE_MASTER">
+              <MappingFragment StoreEntitySet="STATE_MASTER">
+                <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="COUNTRY_MASTER">
+            <EntityTypeMapping TypeName="TalentTopperDB.COUNTRY_MASTER">
+              <MappingFragment StoreEntitySet="COUNTRY_MASTER">
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DISTRICT_MASTER">
+            <EntityTypeMapping TypeName="TalentTopperDB.DISTRICT_MASTER">
+              <MappingFragment StoreEntitySet="DISTRICT_MASTER">
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -226,66 +537,147 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="StateMasters">
-            <EntityTypeMapping TypeName="TalentTopperDB.StateMaster">
-              <MappingFragment StoreEntitySet="StateMaster">
-                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <EntitySetMapping Name="LOG_COUNT">
+            <EntityTypeMapping TypeName="TalentTopperDB.LOG_COUNT">
+              <MappingFragment StoreEntitySet="LOG_COUNT">
+                <ScalarProperty Name="LOG_DATE" ColumnName="LOG_DATE" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MENU_MASTER">
+            <EntityTypeMapping TypeName="TalentTopperDB.MENU_MASTER">
+              <MappingFragment StoreEntitySet="MENU_MASTER">
+                <ScalarProperty Name="SL_NO" ColumnName="SL_NO" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+                <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+                <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLEs">
+            <EntityTypeMapping TypeName="TalentTopperDB.ROLE">
+              <MappingFragment StoreEntitySet="ROLE">
+                <ScalarProperty Name="Branch_ID" ColumnName="Branch_ID" />
+                <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
                 <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="StateName" ColumnName="StateName" />
-                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Short_Name" ColumnName="Short_Name" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLE_PERMISSION">
+            <EntityTypeMapping TypeName="TalentTopperDB.ROLE_PERMISSION">
+              <MappingFragment StoreEntitySet="ROLE_PERMISSION">
+                <ScalarProperty Name="Branch_Id" ColumnName="Branch_Id" />
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Prient" ColumnName="Prient" />
+                <ScalarProperty Name="B_Payment" ColumnName="B_Payment" />
+                <ScalarProperty Name="B_View" ColumnName="B_View" />
+                <ScalarProperty Name="B_Delete" ColumnName="B_Delete" />
+                <ScalarProperty Name="B_Edit" ColumnName="B_Edit" />
+                <ScalarProperty Name="B_Add" ColumnName="B_Add" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADDRESSes">
+            <EntityTypeMapping TypeName="TalentTopperDB.ADDRESS">
+              <MappingFragment StoreEntitySet="ADDRESS">
+                <ScalarProperty Name="is_default" ColumnName="is_default" />
+                <ScalarProperty Name="Branch_ID" ColumnName="Branch_ID" />
+                <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Contact_id" ColumnName="Contact_id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="pincode" ColumnName="pincode" />
+                <ScalarProperty Name="country_id" ColumnName="country_id" />
+                <ScalarProperty Name="state_id" ColumnName="state_id" />
+                <ScalarProperty Name="district_id" ColumnName="district_id" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="addressline" ColumnName="addressline" />
+                <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Branches">
-            <EntityTypeMapping TypeName="TalentTopperDB.Branch">
-              <MappingFragment StoreEntitySet="Branches">
-                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
-                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
-                <ScalarProperty Name="Logo" ColumnName="Logo" />
-                <ScalarProperty Name="ActivationCode" ColumnName="ActivationCode" />
-                <ScalarProperty Name="Website" ColumnName="Website" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Creator" ColumnName="Creator" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-                <ScalarProperty Name="Country" ColumnName="Country" />
-                <ScalarProperty Name="State" ColumnName="State" />
-                <ScalarProperty Name="City" ColumnName="City" />
-                <ScalarProperty Name="BranchStrengh" ColumnName="BranchStrengh" />
-                <ScalarProperty Name="BranchEmailID" ColumnName="BranchEmailID" />
-                <ScalarProperty Name="BranchPhoneNo" ColumnName="BranchPhoneNo" />
-                <ScalarProperty Name="PhoneCode" ColumnName="PhoneCode" />
-                <ScalarProperty Name="BranchMobileNo" ColumnName="BranchMobileNo" />
-                <ScalarProperty Name="MobileCode" ColumnName="MobileCode" />
-                <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
-                <ScalarProperty Name="HOB" ColumnName="HOB" />
+          <EntitySetMapping Name="CONTACTs">
+            <EntityTypeMapping TypeName="TalentTopperDB.CONTACT">
+              <MappingFragment StoreEntitySet="CONTACT">
+                <ScalarProperty Name="Branch_ID" ColumnName="Branch_ID" />
                 <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
-                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
-                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Companies">
-            <EntityTypeMapping TypeName="TalentTopperDB.Company">
-              <MappingFragment StoreEntitySet="Companies">
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="ComapanyType" ColumnName="ComapanyType" />
-                <ScalarProperty Name="City" ColumnName="City" />
-                <ScalarProperty Name="StateID" ColumnName="StateID" />
-                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
-                <ScalarProperty Name="CEOName" ColumnName="CEOName" />
-                <ScalarProperty Name="Logo" ColumnName="Logo" />
-                <ScalarProperty Name="WebsiteURL" ColumnName="WebsiteURL" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
                 <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
-                <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
-                <ScalarProperty Name="FullAddress" ColumnName="FullAddress" />
-                <ScalarProperty Name="CompanayName" ColumnName="CompanayName" />
-                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BRANCHes">
+            <EntityTypeMapping TypeName="TalentTopperDB.BRANCH">
+              <MappingFragment StoreEntitySet="BRANCH">
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Contact_Id" ColumnName="Contact_Id" />
+                <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
+                <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+                <ScalarProperty Name="HODName" ColumnName="HODName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="COMPANies">
+            <EntityTypeMapping TypeName="TalentTopperDB.COMPANY">
+              <MappingFragment StoreEntitySet="COMPANY">
+                <ScalarProperty Name="CompanyType" ColumnName="CompanyType" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Contact_Id" ColumnName="Contact_Id" />
+                <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+                <ScalarProperty Name="WebsiteUrl" ColumnName="WebsiteUrl" />
+                <ScalarProperty Name="CEOName" ColumnName="CEOName" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

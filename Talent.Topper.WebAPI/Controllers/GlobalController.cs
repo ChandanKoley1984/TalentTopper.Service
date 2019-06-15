@@ -16,17 +16,17 @@ namespace Talent.Topper.WebAPI.Controllers
         TalentTopperEntities _dbContext = new TalentTopperEntities();
         [Route("api/getCountryList")]
         [HttpGet]
-        [ResponseType(typeof(CountryMaster))]
-        public List<CountryMaster> GetCountryList()
+        [ResponseType(typeof(COUNTRY_MASTER))]
+        public List<COUNTRY_MASTER> GetCountryList()
         {
-            return _dbContext.CountryMasters.Where(cm => cm.IsActive== true).ToList();
+            return _dbContext.COUNTRY_MASTER.Where(cm => cm.STATUS== 1).ToList();
         }
         [Route("api/getStateList/{countryID}")]
         [HttpGet]
-        [ResponseType(typeof(StateMaster))]
+        [ResponseType(typeof(STATE_MASTER))]
         public async Task<IHttpActionResult> GetStateList(int countryID)
         {
-            var result = _dbContext.StateMasters.Where(sm => sm.CountryId == countryID).ToList();
+            var result = _dbContext.STATE_MASTER.Where(sm => sm.COUNTRY_ID == countryID).ToList();
             if (result == null)
             {
                 return NotFound();

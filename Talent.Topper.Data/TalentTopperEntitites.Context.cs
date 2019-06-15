@@ -25,10 +25,17 @@ namespace Talent.Topper.Data
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<CountryMaster> CountryMasters { get; set; }
+        public virtual DbSet<STATE_MASTER> STATE_MASTER { get; set; }
+        public virtual DbSet<COUNTRY_MASTER> COUNTRY_MASTER { get; set; }
+        public virtual DbSet<DISTRICT_MASTER> DISTRICT_MASTER { get; set; }
         public virtual DbSet<IDMaster> IDMasters { get; set; }
-        public virtual DbSet<StateMaster> StateMasters { get; set; }
-        public virtual DbSet<Branch> Branches { get; set; }
-        public virtual DbSet<Company> Companies { get; set; }
+        public virtual DbSet<LOG_COUNT> LOG_COUNT { get; set; }
+        public virtual DbSet<MENU_MASTER> MENU_MASTER { get; set; }
+        public virtual DbSet<ROLE> ROLEs { get; set; }
+        public virtual DbSet<ROLE_PERMISSION> ROLE_PERMISSION { get; set; }
+        public virtual DbSet<ADDRESS> ADDRESSes { get; set; }
+        public virtual DbSet<CONTACT> CONTACTs { get; set; }
+        public virtual DbSet<BRANCH> BRANCHes { get; set; }
+        public virtual DbSet<COMPANY> COMPANies { get; set; }
     }
 }

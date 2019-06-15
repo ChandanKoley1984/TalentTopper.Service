@@ -15,15 +15,15 @@ namespace Talent.Topper.Data
         /// </summary>
         /// <param name="companyid"></param>
         /// <returns></returns>
-        public IEnumerable<Company> GetCompanies(int? companyid = null)
+        public IEnumerable<COMPANY> GetCompanies(int? companyid = null)
         {
             if (companyid != null)
             {
-                return _dbContext.Companies.Where(m => m.CompanyId == companyid && m.IsActive == true);
+                return _dbContext.COMPANies.Where(m => m.ID == companyid && m.IsActive == true);
             }
             else
             {
-                return _dbContext.Companies.Where(m => m.IsActive == true);
+                return _dbContext.COMPANies.Where(m => m.IsActive == true);
             }
         }
         /// <summary>
@@ -31,10 +31,10 @@ namespace Talent.Topper.Data
         /// </summary>
         /// <param name="_company"></param>
         /// <returns></returns>
-        public int CreateCompany(Company _company)
+        public int CreateCompany(COMPANY _company)
         {            
-            _dbContext.Companies.Add(_company);
-            if (_company.CompanyId > 0)
+            _dbContext.COMPANies.Add(_company);
+            if (_company.Contact_Id > 0)
                 _dbContext.Entry(_company).State = EntityState.Modified;
 
             int saveStatus = _dbContext.SaveChanges();

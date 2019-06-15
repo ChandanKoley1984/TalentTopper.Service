@@ -12,12 +12,18 @@ namespace Talent.Topper.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class StateMaster
+    public partial class ROLE
     {
-        public long id { get; set; }
-        public Nullable<long> CountryId { get; set; }
-        public string StateName { get; set; }
+        public long ID { get; set; }
+        public string Name { get; set; }
+        public string Short_Name { get; set; }
+        public string Description { get; set; }
         public Nullable<bool> IsActive { get; set; }
-        public Nullable<System.DateTime> CreatedOn { get; set; }
+        public Nullable<System.DateTime> CreatedDate { get; set; }
+        public Nullable<int> CreatedBy { get; set; }
+        public Nullable<System.DateTime> UpdatedDate { get; set; }
+        public Nullable<int> UpdatedBy { get; set; }
+        public Nullable<long> Company_ID { get; set; }
+        public Nullable<long> Branch_ID { get; set; }
     }
 }

@@ -12,18 +12,27 @@ namespace Talent.Topper.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class BRANCH
+    public partial class ADDRESS
     {
-        public long ID { get; set; }
-        public string Name { get; set; }
-        public string HODName { get; set; }
-        public string LogoPath { get; set; }
-        public Nullable<int> Company_ID { get; set; }
-        public Nullable<long> Contact_Id { get; set; }
+        public long id { get; set; }
+        public string name { get; set; }
+        public string addressline { get; set; }
+        public string city { get; set; }
+        public Nullable<int> district_id { get; set; }
+        public Nullable<int> state_id { get; set; }
+        public Nullable<int> country_id { get; set; }
+        public string pincode { get; set; }
+        public string MobileNo { get; set; }
+        public string PhoneNo { get; set; }
+        public string Email { get; set; }
+        public Nullable<int> Contact_id { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> UpdatedDate { get; set; }
         public Nullable<int> UpdatedBy { get; set; }
+        public Nullable<long> Company_ID { get; set; }
+        public Nullable<long> Branch_ID { get; set; }
+        public Nullable<int> is_default { get; set; }
     }
 }
