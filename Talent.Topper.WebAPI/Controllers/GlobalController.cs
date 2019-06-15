@@ -7,7 +7,7 @@ using System.Web.Http;
 using Talent.Topper.Data;
 using Talent.Topper.WebAPI.Helpers;
 using System.Web.Http.Description;
-
+using System.Threading.Tasks;
 
 namespace Talent.Topper.WebAPI.Controllers
 {
@@ -21,18 +21,18 @@ namespace Talent.Topper.WebAPI.Controllers
         {
             return _dbContext.CountryMasters.Where(cm => cm.IsActive== true).ToList();
         }
-        //[Route("api/getStateList/{countryID}")]
-        //[HttpGet]
-        //[ResponseType(typeof(STATE_MASTER))]
-        //public async Task<IHttpActionResult> GetStateList(int countryID)
-        //{
-        //    var result = _context.STATE_MASTER.Where(sm => sm.COUNTRY_ID == countryID).ToList();
-        //    if (result == null)
-        //    {
-        //        return NotFound();
-        //    }
+        [Route("api/getStateList/{countryID}")]
+        [HttpGet]
+        [ResponseType(typeof(StateMaster))]
+        public async Task<IHttpActionResult> GetStateList(int countryID)
+        {
+            var result = _dbContext.StateMasters.Where(sm => sm.CountryId == countryID).ToList();
+            if (result == null)
+            {
+                return NotFound();
+            }
 
-        //    return Ok(result);
-        //}
+            return Ok(result);
+        }
     }
 }
