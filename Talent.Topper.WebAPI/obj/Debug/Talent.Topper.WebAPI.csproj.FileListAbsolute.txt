@@ -150,3 +150,5 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.pdb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.xml
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
