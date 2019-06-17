@@ -152,3 +152,5 @@ E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFra
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.xml
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\WebActivatorEx.dll

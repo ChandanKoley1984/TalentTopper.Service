@@ -239,3 +239,5 @@ E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Deb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Debug\EntityFramework.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.Data.pdb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Debug\EntityFramework.xml
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Debug\WebActivatorEx.dll
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Debug\Swashbuckle.Core.dll
