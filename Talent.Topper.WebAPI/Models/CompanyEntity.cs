@@ -9,9 +9,8 @@ namespace Talent.Topper.WebAPI.Models
 {
     public class CompanyEntity
     {
-        [BsonId]
-        public ObjectId ID { get; set; }
-        public string CompanayName { get; set; }       
+        public long ID { get; set; }
+        public string CompanyName { get; set; }       
         public string FullAddress { get; set; }        
         public string CountryCode { get; set; }        
         public string MobileNo { get; set; }        

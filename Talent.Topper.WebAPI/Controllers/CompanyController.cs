@@ -6,8 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Talent.Topper.Data;
 using Talent.Topper.WebAPI.Helpers;
-
-
+using Talent.Topper.WebAPI.Models;
 
 namespace Talent.Topper.WebAPI.Controllers
 {
@@ -23,6 +22,30 @@ namespace Talent.Topper.WebAPI.Controllers
                 List<COMPANY> _companyEntitys = new List<COMPANY>();
 
                 _companyEntitys = _companyHelper.GetCompanies(id);
+
+                if (_companyEntitys != null)
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.OK, _companyEntitys);
+                }
+                else
+                {
+                    return response = Request.CreateResponse(HttpStatusCode.NotFound, "Data is empty");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        [HttpGet]
+        public HttpResponseMessage GetCompaniesEdit(int? id = null)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+            try
+            {
+                List<CompanyEntity> _companyEntitys = new List<CompanyEntity>();
+
+                //_companyEntitys = _companyHelper.GetCompaniesEdit(id);
 
                 if (_companyEntitys != null)
                 {
