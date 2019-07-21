@@ -34,7 +34,7 @@ namespace Talent.Topper.Data
         public int CreateCompany(COMPANY _company)
         {            
             _dbContext.COMPANY.Add(_company);
-            if (_company.Contact_Id > 0)
+            if (_company.ID > 0)
                 _dbContext.Entry(_company).State = EntityState.Modified;
 
             int saveStatus = _dbContext.SaveChanges();
