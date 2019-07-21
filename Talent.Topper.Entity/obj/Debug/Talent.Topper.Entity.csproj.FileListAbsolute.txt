@@ -22,6 +22,5 @@ A:\MVC\TalentTopper.Service\Talent.Topper.Entity\bin\Debug\Talent.Topper.Entity.
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\bin\Debug\Talent.Topper.Entity.pdb
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\bin\Debug\MongoDB.Bson.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\bin\Debug\MongoDB.Bson.xml
-A:\MVC\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.csprojResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.pdb

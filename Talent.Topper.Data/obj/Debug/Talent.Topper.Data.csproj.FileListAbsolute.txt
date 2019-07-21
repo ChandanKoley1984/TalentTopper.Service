@@ -12,11 +12,6 @@ E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talen
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.pdb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb
-A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.pdb
-A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
-A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.dll.config
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\EntityFramework.dll
@@ -24,7 +19,12 @@ E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\Entit
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\EntityFramework.xml
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.Data\bin\Debug\EntityFramework.SqlServer.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.dll.config
+A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\Talent.Topper.Data.pdb
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\EntityFramework.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\EntityFramework.SqlServer.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\EntityFramework.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.Data\bin\Debug\EntityFramework.SqlServer.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
+A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb

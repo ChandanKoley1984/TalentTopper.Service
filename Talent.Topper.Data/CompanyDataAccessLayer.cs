@@ -19,11 +19,11 @@ namespace Talent.Topper.Data
         {
             if (companyid != null)
             {
-                return _dbContext.COMPANies.Where(m => m.ID == companyid && m.IsActive == true);
+                return _dbContext.COMPANY.Where(m => m.ID == companyid && m.IsActive == true);
             }
             else
             {
-                return _dbContext.COMPANies.Where(m => m.IsActive == true);
+                return _dbContext.COMPANY.Where(m => m.IsActive == true);
             }
         }
         /// <summary>
@@ -33,7 +33,7 @@ namespace Talent.Topper.Data
         /// <returns></returns>
         public int CreateCompany(COMPANY _company)
         {            
-            _dbContext.COMPANies.Add(_company);
+            _dbContext.COMPANY.Add(_company);
             if (_company.Contact_Id > 0)
                 _dbContext.Entry(_company).State = EntityState.Modified;
 

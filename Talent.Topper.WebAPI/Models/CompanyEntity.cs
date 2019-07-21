@@ -18,14 +18,14 @@ namespace Talent.Topper.WebAPI.Models
         public string Email { get; set; }       
         public string WebsiteURL { get; set; }
         public string Logo { get; set; }        
-        public string CEOName { get; set; }       
-        public int CountryID { get; set; }        
-        public int StateID { get; set; }       
+        public string CEOName { get; set; }
+        public Nullable<int> CountryID { get; set; }
+        public Nullable<int> StateID { get; set; }    
         public string City { get; set; }        
         public string ComapanyType { get; set; }
         public string Password { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
-        public int? IsActive { get; set; }
+        public bool? IsActive { get; set; }
     }
 }
