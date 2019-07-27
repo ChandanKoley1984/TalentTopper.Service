@@ -14,6 +14,7 @@ namespace Talent.Topper.WebAPI.Controllers
     {
         CompanyHelper _companyHelper = new CompanyHelper();
         [HttpGet]
+        [Route("api/Company/GetCompanies")]
         public HttpResponseMessage GetCompanies(int? id = null)
         {
 
