@@ -48,14 +48,14 @@ namespace Talent.Topper.WebAPI.Controllers
                 List<CompanyEntity> _CompanyEntity = new List<CompanyEntity>();
 
 
-                var query = from c in _dbContext.COMPANY
-                            join b in _dbContext.BRANCH on c.ID equals b.Company_ID into Joined_COMPANY_BRANCH
+                var query = from c in _dbContext.COMPANies
+                            join b in _dbContext.BRANCHes on c.ID equals b.Company_ID into Joined_COMPANY_BRANCH
                             from bc in Joined_COMPANY_BRANCH.DefaultIfEmpty()
-                            join cont in _dbContext.CONTACT on new { _a = bc.Company_ID, _b = bc.ID } equals new { _a = cont.Company_ID, _b = (long)cont.Branch_ID } into Joined_COMPANY_CONTACT
+                            join cont in _dbContext.CONTACTs on new { _a = bc.Company_ID, _b = bc.ID } equals new { _a = cont.Company_ID, _b = (long)cont.Branch_ID } into Joined_COMPANY_CONTACT
                             from ccont in Joined_COMPANY_CONTACT.DefaultIfEmpty()
-                            join add in _dbContext.ADDRESS on new { _a = bc.Company_ID, _b = bc.ID, _c = ccont.ID } equals new { _a = add.Company_ID, _b = (long)add.Branch_ID, _c = (long)add.Contact_id } into Joined_CONTACT_ADDRESS
+                            join add in _dbContext.ADDRESSes on new { _a = bc.Company_ID, _b = bc.ID, _c = ccont.ID } equals new { _a = add.Company_ID, _b = (long)add.Branch_ID, _c = (long)add.Contact_id } into Joined_CONTACT_ADDRESS
                             from cadd in Joined_CONTACT_ADDRESS.DefaultIfEmpty()
-                            join r in _dbContext.ROLE on new { _a = bc.Company_ID, _b = bc.ID, _c = (long)ccont.RoleId } equals new { _a = r.Company_ID, _b = (long)r.Branch_ID, _c = r.ID } into Joined_ROLE_CONTACT
+                            join r in _dbContext.ROLEs on new { _a = bc.Company_ID, _b = bc.ID, _c = (long)ccont.RoleId } equals new { _a = r.Company_ID, _b = (long)r.Branch_ID, _c = r.ID } into Joined_ROLE_CONTACT
                             from cr in Joined_ROLE_CONTACT.DefaultIfEmpty()
                             where (c.IsActive == true) && (c.ID == (long)id)
                             orderby c.ID
