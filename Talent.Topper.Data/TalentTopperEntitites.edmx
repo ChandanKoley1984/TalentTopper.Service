@@ -50,8 +50,6 @@ warning 6002: The table/view 'sandeep.dbo.BRANCH' does not have a primary key de
           <Property Name="UpdatedDate" Type="datetime" />
           <Property Name="UpdatedBy" Type="int" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'sandeep.dbo.COMPANY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="COMPANY">
           <Key>
             <PropertyRef Name="ID" />
@@ -196,6 +194,7 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
           <Property Name="COUNTRY_ID" Type="int" />
         </EntityType>
         <EntityContainer Name="TalentTopperDBStoreContainer">
+          <EntitySet Name="COMPANY" EntityType="Self.COMPANY" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="COUNTRY_MASTER" EntityType="Self.COUNTRY_MASTER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DISTRICT_MASTER" EntityType="Self.DISTRICT_MASTER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IDMaster" EntityType="Self.IDMaster" Schema="dbo" store:Type="Tables" />
@@ -241,22 +240,6 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
     [BRANCH].[UpdatedDate] AS [UpdatedDate], 
     [BRANCH].[UpdatedBy] AS [UpdatedBy]
     FROM [dbo].[BRANCH] AS [BRANCH]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="COMPANY" EntityType="Self.COMPANY" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [COMPANY].[ID] AS [ID], 
-    [COMPANY].[CompanyName] AS [CompanyName], 
-    [COMPANY].[CEOName] AS [CEOName], 
-    [COMPANY].[WebsiteUrl] AS [WebsiteUrl], 
-    [COMPANY].[LogoPath] AS [LogoPath], 
-    [COMPANY].[Contact_Id] AS [Contact_Id], 
-    [COMPANY].[IsActive] AS [IsActive], 
-    [COMPANY].[CreatedDate] AS [CreatedDate], 
-    [COMPANY].[CreatedBy] AS [CreatedBy], 
-    [COMPANY].[UpdatedDate] AS [UpdatedDate], 
-    [COMPANY].[UpdatedBy] AS [UpdatedBy], 
-    [COMPANY].[CompanyType] AS [CompanyType]
-    FROM [dbo].[COMPANY] AS [COMPANY]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="CONTACT" EntityType="Self.CONTACT" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 

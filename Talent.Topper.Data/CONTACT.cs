@@ -27,7 +27,7 @@ namespace Talent.Topper.Data
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> UpdatedDate { get; set; }
         public Nullable<int> UpdatedBy { get; set; }
-        public long? Company_ID { get; set; }
-        public long? Branch_ID { get; set; }
+        public Nullable<long> Company_ID { get; set; }
+        public Nullable<long> Branch_ID { get; set; }
     }
 }

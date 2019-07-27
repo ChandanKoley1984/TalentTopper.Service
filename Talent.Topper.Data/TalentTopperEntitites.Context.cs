@@ -30,12 +30,12 @@ namespace Talent.Topper.Data
         public virtual DbSet<IDMaster> IDMasters { get; set; }
         public virtual DbSet<LOG_COUNT> LOG_COUNT { get; set; }
         public virtual DbSet<MENU_MASTER> MENU_MASTER { get; set; }
-        public virtual DbSet<ROLE> ROLE { get; set; }
+        public virtual DbSet<ROLE> ROLEs { get; set; }
         public virtual DbSet<ROLE_PERMISSION> ROLE_PERMISSION { get; set; }
-        public virtual DbSet<ADDRESS> ADDRESS { get; set; }
-        public virtual DbSet<BRANCH> BRANCH { get; set; }
-        public virtual DbSet<COMPANY> COMPANY { get; set; }
-        public virtual DbSet<CONTACT> CONTACT { get; set; }
+        public virtual DbSet<ADDRESS> ADDRESSes { get; set; }
+        public virtual DbSet<BRANCH> BRANCHes { get; set; }
+        public virtual DbSet<COMPANY> COMPANies { get; set; }
+        public virtual DbSet<CONTACT> CONTACTs { get; set; }
         public virtual DbSet<STATE_MASTER> STATE_MASTER { get; set; }
     }
 }
