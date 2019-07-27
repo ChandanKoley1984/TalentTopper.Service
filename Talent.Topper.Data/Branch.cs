@@ -18,7 +18,7 @@ namespace Talent.Topper.Data
         public string Name { get; set; }
         public string HODName { get; set; }
         public string LogoPath { get; set; }
-        public Nullable<int> Company_ID { get; set; }
+        public long? Company_ID { get; set; }
         public Nullable<long> Contact_Id { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }

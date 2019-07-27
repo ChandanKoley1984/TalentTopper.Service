@@ -16,7 +16,7 @@ namespace Talent.Topper.Data
     {
         public long ID { get; set; }
         public string Name { get; set; }
-        public Nullable<int> RoleId { get; set; }
+        public Nullable<long> RoleId { get; set; }
         public string MobileNo { get; set; }
         public string PhoneNo { get; set; }
         public string Email { get; set; }
@@ -27,7 +27,7 @@ namespace Talent.Topper.Data
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> UpdatedDate { get; set; }
         public Nullable<int> UpdatedBy { get; set; }
-        public Nullable<long> Company_ID { get; set; }
-        public Nullable<long> Branch_ID { get; set; }
+        public long? Company_ID { get; set; }
+        public long? Branch_ID { get; set; }
     }
 }
