@@ -15,11 +15,11 @@ namespace Talent.Topper.Data
         /// </summary>
         /// <param name="companyid"></param>
         /// <returns></returns>
-        public IEnumerable<COMPANY> GetCompanies(int? companyid = null)
+        public IEnumerable<COMPANY> GetCompanies(int? ID = null)
         {
-            if (companyid != null)
+            if (ID != null)
             {
-                return _dbContext.COMPANY.Where(m => m.ID == companyid && m.IsActive == true);
+                return _dbContext.COMPANY.Where(m => m.ID == ID && m.IsActive == true);
             }
             else
             {
