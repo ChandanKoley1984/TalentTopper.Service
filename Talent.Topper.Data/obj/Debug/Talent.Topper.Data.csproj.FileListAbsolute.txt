@@ -37,3 +37,4 @@ C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Tale
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.dll
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.Data\obj\Debug\Talent.Topper.Data.csprojResolveAssemblyReference.cache

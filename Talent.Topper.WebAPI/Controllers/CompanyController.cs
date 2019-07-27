@@ -107,6 +107,11 @@ namespace Talent.Topper.WebAPI.Controllers
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
+                //select* from company : done
+                //select* from branch
+                //select* from[dbo].[CONTACT]
+                //select* from[dbo].[ADDRESS]
+
                 int saveStatus = _companyHelper.CreateCompany(_company);
 
                 if (saveStatus > 0)

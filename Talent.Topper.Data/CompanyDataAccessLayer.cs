@@ -38,6 +38,8 @@ namespace Talent.Topper.Data
                 _dbContext.Entry(_company).State = EntityState.Modified;
 
             int saveStatus = _dbContext.SaveChanges();
+            long OutPut_ID = _company.ID;
+
             return saveStatus;
         }
 
