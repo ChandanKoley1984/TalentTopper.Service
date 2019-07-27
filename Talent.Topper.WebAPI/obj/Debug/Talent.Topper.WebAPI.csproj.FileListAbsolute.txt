@@ -73,12 +73,6 @@ E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\Antlr3.Ru
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.pdb
-E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.dll
-E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.xml
-E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
-E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
-E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
-E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\ApplicationInsights.config
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\roslyn\csc.exe
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -95,11 +89,8 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\roslyn\VBCSCompiler.exe.con
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.WebAPI.dll.config
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.WebAPI.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.WebAPI.pdb
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.fakesconfig
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Antlr3.Runtime.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\DnsClient.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.Agent.Intercept.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.DependencyCollector.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -108,15 +99,12 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.Web.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.WindowsServer.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.ApplicationInsights.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.QualityTools.Testing.Fakes.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.Web.Infrastructure.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Mongo.Helper.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Bson.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Driver.Core.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Driver.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Newtonsoft.Json.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Buffers.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Net.Http.Formatting.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Runtime.InteropServices.RuntimeInformation.dll
@@ -131,14 +119,11 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Web.WebPages.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Web.WebPages.Razor.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Data.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Entity.dll
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\WebGrease.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Mongo.Helper.pdb
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Data.pdb
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Entity.pdb
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\DnsClient.xml
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.xml
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.DependencyCollector.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.Web.xml
@@ -149,7 +134,6 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Bson.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Driver.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Driver.Core.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Newtonsoft.Json.xml
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Net.Http.Formatting.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Web.Helpers.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Web.Http.xml
@@ -161,7 +145,183 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Web.WebPages.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Web.WebPages.Deployment.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\System.Web.WebPages.Razor.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Antlr3.Runtime.pdb
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojFakesResolveAssemblyReference.cache
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.pdb
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.dll
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.xml
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
+E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.fakesconfig
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.QualityTools.Testing.Fakes.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojFakesResolveAssemblyReference.cache
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\fakes.args
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Antlr3.Runtime.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Antlr3.Runtime.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\DnsClient.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\DnsClient.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\EntityFramework.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\EntityFramework.SqlServer.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\EntityFramework.SqlServer.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\EntityFramework.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.Agent.Intercept.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.DependencyCollector.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.DependencyCollector.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.PerfCounterCollector.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.ServerTelemetryChannel.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.ServerTelemetryChannel.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.Web.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.Web.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.WindowsServer.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.AI.WindowsServer.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.ApplicationInsights.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.ApplicationInsights.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.QualityTools.Testing.Fakes.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Microsoft.Web.Infrastructure.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Mongo.Helper.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Mongo.Helper.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\MongoDB.Bson.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\MongoDB.Bson.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\MongoDB.Driver.Core.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\MongoDB.Driver.Core.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\MongoDB.Driver.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\MongoDB.Driver.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Newtonsoft.Json.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Newtonsoft.Json.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Swashbuckle.Core.1.0.0.0.Fakes.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Swashbuckle.Core.1.0.0.0.Fakes.fakesconfig
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Swashbuckle.Core.1.0.0.0.Fakes.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Swashbuckle.Core.1.0.0.0.Fakes.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Swashbuckle.Core.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Buffers.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Net.Http.Formatting.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Net.Http.Formatting.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Runtime.InteropServices.RuntimeInformation.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Helpers.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Helpers.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Http.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Http.WebHost.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Http.WebHost.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Http.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Mvc.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Mvc.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Optimization.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Optimization.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Razor.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.Razor.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.WebPages.Deployment.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.WebPages.Deployment.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.WebPages.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.WebPages.Razor.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.WebPages.Razor.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\System.Web.WebPages.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Talent.Topper.Data.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Talent.Topper.Data.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Talent.Topper.Entity.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\Talent.Topper.Entity.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\WebActivatorEx.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\b\WebGrease.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\f.ah
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\f.ch
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\f.cs
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\f.csproj
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\f.fakes
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\f.fakesconfig
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\f.snk
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\o\f.csproj.FileListAbsolute.txt
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\o\f.csprojResolveAssemblyReference.cache
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\o\Swashbuckle.Core.1.0.0.0.Fakes.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Fakes\sc\o\Swashbuckle.Core.1.0.0.0.Fakes.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\ApplicationInsights.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\csc.exe
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\vbc.exe
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.WebAPI.dll.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.WebAPI.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.WebAPI.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Antlr3.Runtime.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\DnsClient.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\EntityFramework.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.Web.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.ApplicationInsights.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Mongo.Helper.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\MongoDB.Bson.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\MongoDB.Driver.Core.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\MongoDB.Driver.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Newtonsoft.Json.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Buffers.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Helpers.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Http.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Mvc.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Optimization.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Razor.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.Data.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.Entity.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\WebGrease.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Mongo.Helper.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.Data.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.Entity.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\DnsClient.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\EntityFramework.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.Web.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.ApplicationInsights.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\MongoDB.Bson.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\MongoDB.Driver.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\MongoDB.Driver.Core.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Newtonsoft.Json.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Helpers.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Http.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Mvc.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Optimization.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.Razor.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Antlr3.Runtime.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.pdb

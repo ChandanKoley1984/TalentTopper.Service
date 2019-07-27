@@ -66,3 +66,20 @@ A:\MVC\TalentTopper.Service\Mongo.Helper\bin\Debug\MongoDB.Driver.Core.xml
 A:\MVC\TalentTopper.Service\Mongo.Helper\obj\Debug\Mongo.Helper.csprojResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Mongo.Helper\obj\Debug\Mongo.Helper.dll
 A:\MVC\TalentTopper.Service\Mongo.Helper\obj\Debug\Mongo.Helper.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\Mongo.Helper.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\Mongo.Helper.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\DnsClient.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\MongoDB.Bson.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\MongoDB.Driver.Core.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\MongoDB.Driver.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\System.Buffers.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\Talent.Topper.Entity.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\Talent.Topper.Entity.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\DnsClient.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\MongoDB.Bson.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\MongoDB.Driver.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\bin\Debug\MongoDB.Driver.Core.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\obj\Debug\Mongo.Helper.csprojResolveAssemblyReference.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\obj\Debug\Mongo.Helper.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Mongo.Helper\obj\Debug\Mongo.Helper.pdb
