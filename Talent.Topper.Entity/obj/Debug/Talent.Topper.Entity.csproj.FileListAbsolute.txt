@@ -25,3 +25,10 @@ A:\MVC\TalentTopper.Service\Talent.Topper.Entity\bin\Debug\MongoDB.Bson.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.csprojResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Entity\bin\Debug\Talent.Topper.Entity.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Entity\bin\Debug\Talent.Topper.Entity.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Entity\bin\Debug\MongoDB.Bson.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Entity\bin\Debug\MongoDB.Bson.xml
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.csprojResolveAssemblyReference.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.dll
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.pdb
