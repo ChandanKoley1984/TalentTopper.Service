@@ -16,6 +16,7 @@ namespace Talent.Topper.WebAPI.Controllers
         [HttpGet]
         public HttpResponseMessage GetCompanies(int? id = null)
         {
+
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
@@ -63,18 +64,17 @@ namespace Talent.Topper.WebAPI.Controllers
                                 ID = c.ID,
 
                                 CompanyName = c.CompanyName,
-                                FullAddress = cadd.addressline,
-                                CountryCode = "",
+                                addressline = cadd.addressline,                              
                                 MobileNo = ccont.MobileNo,
                                 PhoneNo = ccont.PhoneNo,
                                 Email = ccont.Email,
-                                WebsiteURL = c.WebsiteUrl,
-                                Logo = c.LogoPath,
+                                WebsiteUrl = c.WebsiteUrl,
+                                LogoPath = c.LogoPath,
                                 CEOName = c.CEOName,
-                                CountryID = cadd.country_id == null ? null : cadd.country_id,
-                                StateID = cadd.state_id == null ? null : cadd.state_id,
+                                //CountryID = cadd.country_id == null ? null : cadd.country_id,
+                                //StateID = cadd.state_id == null ? null : cadd.state_id,
                                 City = cadd.city,
-                                ComapanyType = c.CompanyType,
+                                CompanyType = c.CompanyType,
                                 Password = ccont.Password,
                                 IsActive =  c.IsActive
                             };

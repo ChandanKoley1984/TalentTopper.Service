@@ -14,9 +14,9 @@ namespace Talent.Topper.WebAPI.Helpers
         /// </summary>
         /// <param name="companyID"></param>
         /// <returns></returns>
-        internal List<COMPANY> GetCompanies(int? companyID = null)
+        internal List<COMPANY> GetCompanies(int? ID = null)
         {
-            return _companyDataAccessLayer.GetCompanies(companyID).ToList();
+            return _companyDataAccessLayer.GetCompanies(ID).ToList();
         }
         /// <summary>
         /// 
@@ -24,9 +24,7 @@ namespace Talent.Topper.WebAPI.Helpers
         /// <param name="_company"></param>
         /// <returns></returns>
         internal int CreateCompany(COMPANY _company)
-        {
-            _company.CreatedDate = DateTime.Now;
-            _company.IsActive = true;
+        {            
             return _companyDataAccessLayer.CreateCompany(_company);
         }
 
