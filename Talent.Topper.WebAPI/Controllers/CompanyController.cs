@@ -13,6 +13,8 @@ namespace Talent.Topper.WebAPI.Controllers
     public class CompanyController : ApiController
     {
         CompanyHelper _companyHelper = new CompanyHelper();
+        BranchHelper _branchHelper = new BranchHelper();
+
         [HttpGet]
         public HttpResponseMessage GetCompanies(int? id = null)
         {
@@ -64,7 +66,7 @@ namespace Talent.Topper.WebAPI.Controllers
                                 ID = c.ID,
 
                                 CompanyName = c.CompanyName,
-                                addressline = cadd.addressline,                              
+                                addressline = cadd.addressline,
                                 MobileNo = ccont.MobileNo,
                                 PhoneNo = ccont.PhoneNo,
                                 Email = ccont.Email,
@@ -76,7 +78,7 @@ namespace Talent.Topper.WebAPI.Controllers
                                 City = cadd.city,
                                 CompanyType = c.CompanyType,
                                 Password = ccont.Password,
-                                IsActive =  c.IsActive
+                                IsActive = c.IsActive
                             };
 
                 _CompanyEntity = query.ToList();
@@ -102,7 +104,7 @@ namespace Talent.Topper.WebAPI.Controllers
         /// <param name="generatedIDEntity"></param>
         /// <returns></returns>
         [HttpPost]
-        public HttpResponseMessage CreateCompany([FromBody] COMPANY _company)
+        public HttpResponseMessage CreateCompany([FromBody] CompanyEntity _CompanyEntity)
         {
             HttpResponseMessage response = new HttpResponseMessage();
             try
@@ -112,11 +114,53 @@ namespace Talent.Topper.WebAPI.Controllers
                 //select* from[dbo].[CONTACT]
                 //select* from[dbo].[ADDRESS]
 
-                int saveStatus = _companyHelper.CreateCompany(_company);
+                COMPANY _company = new COMPANY();
+                _company.ID = _CompanyEntity.ID;
+                _company.CompanyName = _CompanyEntity.CompanyName;
+                _company.CEOName = _CompanyEntity.CEOName;
+                _company.WebsiteUrl = _CompanyEntity.WebsiteUrl;
+                _company.LogoPath = _CompanyEntity.LogoPath;
+                //_company.Contact_Id = _CompanyEntity.Contact_Id;
+                _company.IsActive = _CompanyEntity.IsActive;
+                _company.CreatedDate = _CompanyEntity.CreatedDate;
+                _company.CreatedBy = _CompanyEntity.CreatedBy;
+                //_company.UpdatedDate = _CompanyEntity.UpdatedDate;
+                //_company.UpdatedBy = _CompanyEntity.UpdatedBy;
+                _company.CompanyType = _CompanyEntity.CompanyType;
 
-                if (saveStatus > 0)
+
+                int saveStatusCompany = _companyHelper.CreateCompany(_company);
+
+                if (saveStatusCompany > 0)
                 {
-                    return response = Request.CreateResponse(HttpStatusCode.OK, _company);
+
+                    BRANCH _branch = new BRANCH();
+                    _branch.ID = 0;
+                    _branch.Name = _CompanyEntity.CompanyName;
+                    _branch.HODName = _CompanyEntity.CEOName;
+                    _branch.LogoPath = _CompanyEntity.LogoPath;
+                    //_branch.Company_ID = 0;
+                    //_branch.Contact_Id = 0;
+                    _branch.IsActive = _CompanyEntity.IsActive;
+                    _branch.CreatedDate = _CompanyEntity.CreatedDate;
+                    _branch.CreatedBy = _CompanyEntity.CreatedBy;
+                    //_branch.UpdatedDate = _CompanyEntity.UpdatedDate;
+                    //_branch.UpdatedBy = _CompanyEntity.UpdatedBy;
+
+
+                    int saveStatusBranch = _branchHelper.CreateBranch(_branch);
+
+                    if (saveStatusBranch > 0)
+                    {
+
+                        return response = Request.CreateResponse(HttpStatusCode.OK, _company);
+                    }
+                    else
+                    {
+                        return response = Request.CreateResponse(HttpStatusCode.NotFound, "Unable to create company");
+                    }
+
+                    //return response = Request.CreateResponse(HttpStatusCode.OK, _company);
                 }
                 else
                 {

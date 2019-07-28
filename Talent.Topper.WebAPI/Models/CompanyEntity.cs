@@ -17,12 +17,10 @@ namespace Talent.Topper.WebAPI.Models
         public bool? IsActive { get; set; }
         public DateTime CreatedDate { get; set; }
         public int CreatedBy { get; set; }
-
         public string CompanyType { get; set; }
         public int RoleId { get; set; }
         public string MobileNo { get; set; }
         public string PhoneNo { get; set; }
-
         public string Email { get; set; }
         public string Password { get; set; }
         public string addressline { get; set; }
