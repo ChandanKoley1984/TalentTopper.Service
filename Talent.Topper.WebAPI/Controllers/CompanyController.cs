@@ -16,6 +16,7 @@ namespace Talent.Topper.WebAPI.Controllers
         BranchHelper _branchHelper = new BranchHelper();
 
         [HttpGet]
+        [Route("api/Company/GetCompanies")]
         public HttpResponseMessage GetCompanies(int? id = null)
         {
 
