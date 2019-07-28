@@ -245,3 +245,4 @@ C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Tale
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.dll
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
