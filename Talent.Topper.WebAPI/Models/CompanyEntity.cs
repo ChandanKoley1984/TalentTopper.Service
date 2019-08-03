@@ -28,5 +28,6 @@ namespace Talent.Topper.WebAPI.Models
         public int StateID { get; set; }
         public string City { get; set; }
         public int is_default { get; set; }
+        public string ImageFile { get; set; }
     }
 }
