@@ -153,8 +153,33 @@ namespace Talent.Topper.WebAPI.Controllers
 
                     if (saveStatusBranch > 0)
                     {
+                        CONTACT _contact = new CONTACT();
+                        _contact.ID = 0;
+                        _contact.Name = _CompanyEntity.CompanyName;
+                        _contact.RoleId = 1;
+                        _contact.MobileNo = _CompanyEntity.MobileNo;
+                        _contact.PhoneNo = _CompanyEntity.PhoneNo;
+                        _contact.Email = _CompanyEntity.Email;
+                        _contact.Password = _CompanyEntity.Password;
+                        //_contact.Gender = _CompanyEntity.Gender;
+                        //_branch.Company_ID = 0;
+                        //_branch.Contact_Id = 0;
+                        _branch.IsActive = _CompanyEntity.IsActive;
+                        _branch.CreatedDate = _CompanyEntity.CreatedDate;
+                        _branch.CreatedBy = _CompanyEntity.CreatedBy;
+                        //_branch.UpdatedDate = _CompanyEntity.UpdatedDate;
+                        //_branch.UpdatedBy = _CompanyEntity.UpdatedBy;
+                        // return response = Request.CreateResponse(HttpStatusCode.OK, _company);
 
-                        return response = Request.CreateResponse(HttpStatusCode.OK, _company);
+                        int saveStatusContact = _branchHelper.CreateBranch(_branch);
+                        if(saveStatusContact>0)
+                        {
+                            return response = Request.CreateResponse(HttpStatusCode.OK, _company);
+                        }
+                        else
+                        {
+                            return response = Request.CreateResponse(HttpStatusCode.NotFound, "Unable to create company");
+                        }
                     }
                     else
                     {

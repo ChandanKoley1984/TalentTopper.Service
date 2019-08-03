@@ -58,6 +58,7 @@
     <Compile Include="BRANCH.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
     </Compile>
+    <Compile Include="ContactDataAccessLayer.cs" />
     <Compile Include="BranchDataAccessLayer.cs" />
     <Compile Include="COMPANY.cs">
       <DependentUpon>TalentTopperEntitites.tt</DependentUpon>
