@@ -113,7 +113,7 @@ namespace Talent.Topper.WebAPI.Controllers
                 //select* from company : done
                 //select* from branch
                 //select* from[dbo].[CONTACT]
-                //select* from[dbo].[ADDRESS]
+                //d* from[dbo].[ADDRESS]
 
                 COMPANY _company = new COMPANY();
                 _company.ID = _CompanyEntity.ID;
