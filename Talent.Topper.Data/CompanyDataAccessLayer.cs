@@ -4,7 +4,10 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Web.Http;
+using System.Web.Http.Description;
+using System.Net;
+using System.Net.Http;
 namespace Talent.Topper.Data
 {
     public class CompanyDataAccessLayer
@@ -32,14 +35,16 @@ namespace Talent.Topper.Data
         /// <param name="_company"></param>
         /// <returns></returns>
         public int CreateCompany(COMPANY _company)
-        {            
+        {
+            //var returnValue = new Data_Return();
             _dbContext.COMPANies.Add(_company);
             if (_company.ID > 0)
                 _dbContext.Entry(_company).State = EntityState.Modified;
 
             int saveStatus = _dbContext.SaveChanges();
             long OutPut_ID = _company.ID;
-
+            //returnValue.saveStatus = saveStatus;
+            //returnValue.Created_ID = OutPut_ID;
             return saveStatus;
         }
 
