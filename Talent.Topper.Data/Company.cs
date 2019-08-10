@@ -26,5 +26,6 @@ namespace Talent.Topper.Data
         public Nullable<System.DateTime> UpdatedDate { get; set; }
         public Nullable<int> UpdatedBy { get; set; }
         public string CompanyType { get; set; }
+        public Nullable<bool> Active_Status { get; set; }
     }
 }
