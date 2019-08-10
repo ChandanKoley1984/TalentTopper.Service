@@ -309,6 +309,10 @@ C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Tale
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\EntityFramework.xml
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\MongoDB.Driver.Core.xml
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\DnsClient.xml
-C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csprojResolveAssemblyReference.cache
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.dll
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.pdb
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.WebAPI.dll.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.Data.dll.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csprojAssemblyReference.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csproj.CoreCompileInputs.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csproj.CopyComplete

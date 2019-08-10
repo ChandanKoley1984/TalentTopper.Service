@@ -18,16 +18,18 @@ namespace Talent.Topper.WebAPI.Models
         public DateTime CreatedDate { get; set; }
         public int CreatedBy { get; set; }
         public string CompanyType { get; set; }
-        public int RoleId { get; set; }
+        public long? RoleId { get; set; }
         public string MobileNo { get; set; }
         public string PhoneNo { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public string addressline { get; set; }
-        public int CountryID { get; set; }
-        public int StateID { get; set; }
+        public int? CountryID { get; set; }
+        public int? StateID { get; set; }
         public string City { get; set; }
         public int is_default { get; set; }
         public string ImageFile { get; set; }
+        public Nullable<long> Company_ID { get; set; }
+        public Nullable<long> Branch_ID { get; set; }
     }
 }

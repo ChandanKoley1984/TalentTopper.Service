@@ -74,12 +74,15 @@ namespace Talent.Topper.WebAPI.Controllers
                                 WebsiteUrl = c.WebsiteUrl,
                                 LogoPath = c.LogoPath,
                                 CEOName = c.CEOName,
-                                //CountryID = cadd.country_id == null ? null : cadd.country_id,
-                                //StateID = cadd.state_id == null ? null : cadd.state_id,
+                                CountryID = cadd.country_id == null ? null : cadd.country_id,
+                                StateID = cadd.state_id == null ? null : cadd.state_id,
+                                RoleId= ccont.RoleId,
                                 City = cadd.city,
                                 CompanyType = c.CompanyType,
                                 Password = ccont.Password,
-                                IsActive = c.IsActive
+                                IsActive = c.IsActive,
+                                Company_ID = ccont.Company_ID == null ? null : ccont.Company_ID,
+                                Branch_ID = ccont.Branch_ID == null ? null : ccont.Branch_ID,
                             };
 
                 _CompanyEntity = query.ToList();

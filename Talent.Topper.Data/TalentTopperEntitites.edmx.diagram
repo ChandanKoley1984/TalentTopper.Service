@@ -12,11 +12,11 @@
         <EntityTypeShape EntityType="TalentTopperDB.MENU_MASTER" Width="1.5" PointX="4.75" PointY="0.75" />
         <EntityTypeShape EntityType="TalentTopperDB.ROLE" Width="1.5" PointX="4.75" PointY="5.75" />
         <EntityTypeShape EntityType="TalentTopperDB.ROLE_PERMISSION" Width="1.5" PointX="6.75" PointY="0.75" />
-        <EntityTypeShape EntityType="TalentTopperDB.ADDRESS" Width="1.5" PointX="6.75" PointY="5.75" />
         <EntityTypeShape EntityType="TalentTopperDB.COMPANY" Width="1.5" PointX="8.75" PointY="0.75" />
         <EntityTypeShape EntityType="TalentTopperDB.CONTACT" Width="1.5" PointX="8.75" PointY="5.75" />
         <EntityTypeShape EntityType="TalentTopperDB.STATE_MASTER" Width="1.5" PointX="2.75" PointY="9.75" />
         <EntityTypeShape EntityType="TalentTopperDB.BRANCH" Width="1.5" PointX="9.375" PointY="10.75" />
+        <EntityTypeShape EntityType="TalentTopperDB.ADDRESS" Width="1.5" PointX="5.375" PointY="9.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

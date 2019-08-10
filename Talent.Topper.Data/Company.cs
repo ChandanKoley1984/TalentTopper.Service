@@ -27,11 +27,4 @@ namespace Talent.Topper.Data
         public Nullable<int> UpdatedBy { get; set; }
         public string CompanyType { get; set; }
     }
-
-    public partial class Data_Return
-    {
-        public int saveStatus { get; set; }
-        public long Created_ID { get; set; }
-
-    }
 }
