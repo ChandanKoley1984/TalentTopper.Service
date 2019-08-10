@@ -34,8 +34,10 @@ namespace Talent.Topper.Data
         /// </summary>
         /// <param name="_company"></param>
         /// <returns></returns>
-        public int CreateCompany(COMPANY _company)
+        public Dictionary<string, string> CreateCompany(COMPANY _company)
         {
+            Dictionary<string, string> _CompanyOutPut = new Dictionary<string, string>();
+
             //var returnValue = new Data_Return();
             _dbContext.COMPANies.Add(_company);
             if (_company.ID > 0)
@@ -43,11 +45,15 @@ namespace Talent.Topper.Data
 
             int saveStatus = _dbContext.SaveChanges();
             long OutPut_ID = _company.ID;
-            //returnValue.saveStatus = saveStatus;
-            //returnValue.Created_ID = OutPut_ID;
-            return saveStatus;
+
+            _CompanyOutPut.Add("saveStatus", saveStatus.ToString());
+            _CompanyOutPut.Add("OutPut", OutPut_ID.ToString());
+
+
+            return _CompanyOutPut;
         }
 
 
     }
+   
 }

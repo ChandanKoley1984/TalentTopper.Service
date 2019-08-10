@@ -31,8 +31,10 @@ namespace Talent.Topper.Data
         /// </summary>
         /// <param name="_company"></param>
         /// <returns></returns>
-        public int CreateBranch(BRANCH _branch)
+        public Dictionary<string, string> CreateBranch(BRANCH _branch)
         {
+            Dictionary<string, string> _BranchOutPut = new Dictionary<string, string>();
+
             _dbContext.BRANCHes.Add(_branch);
             if (_branch.ID > 0)
                 _dbContext.Entry(_branch).State = EntityState.Modified;
@@ -40,7 +42,10 @@ namespace Talent.Topper.Data
             int saveStatus = _dbContext.SaveChanges();
             long OutPut_ID = _branch.ID;
 
-            return saveStatus;
+            _BranchOutPut.Add("saveStatus", saveStatus.ToString());
+            _BranchOutPut.Add("OutPut", OutPut_ID.ToString());
+
+            return _BranchOutPut;
         }
     }
 }

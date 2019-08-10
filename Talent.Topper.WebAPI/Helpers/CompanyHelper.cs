@@ -23,7 +23,7 @@ namespace Talent.Topper.WebAPI.Helpers
         /// </summary>
         /// <param name="_company"></param>
         /// <returns></returns>
-        internal int CreateCompany(COMPANY _company)
+        internal Dictionary<string, string>CreateCompany(COMPANY _company)
         {            
             return _companyDataAccessLayer.CreateCompany(_company);
         }

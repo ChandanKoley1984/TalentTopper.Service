@@ -23,7 +23,7 @@ namespace Talent.Topper.WebAPI.Helpers
         /// </summary>
         /// <param name="_contact"></param>
         /// <returns></returns>
-        internal int CreateContact(CONTACT _contact)
+        internal Dictionary<string, string> CreateContact(CONTACT _contact)
         {
             return _ContactDataAccessLayer.CreateContact(_contact);
         }

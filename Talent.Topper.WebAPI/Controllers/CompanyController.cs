@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -14,6 +15,7 @@ namespace Talent.Topper.WebAPI.Controllers
     {
         CompanyHelper _companyHelper = new CompanyHelper();
         BranchHelper _branchHelper = new BranchHelper();
+        ContactHelper _contactHelper = new ContactHelper();
 
         [HttpGet]
         [Route("api/Company/GetCompanies")]
@@ -108,6 +110,10 @@ namespace Talent.Topper.WebAPI.Controllers
         public HttpResponseMessage CreateCompany([FromBody] CompanyEntity _CompanyEntity)
         {
             HttpResponseMessage response = new HttpResponseMessage();
+            Dictionary<string, string> _CompanyOutPut = new Dictionary<string, string>();
+            Dictionary<string, string> _BranchOutPut = new Dictionary<string, string>();
+            Dictionary<string, string> _ContactOutPut = new Dictionary<string, string>();
+
             try
             {
                 //select* from company : done
@@ -121,16 +127,19 @@ namespace Talent.Topper.WebAPI.Controllers
                 _company.CEOName = _CompanyEntity.CEOName;
                 _company.WebsiteUrl = _CompanyEntity.WebsiteUrl;
                 _company.LogoPath = _CompanyEntity.LogoPath;
-                //_company.Contact_Id = _CompanyEntity.Contact_Id;
                 _company.IsActive = _CompanyEntity.IsActive;
                 _company.CreatedDate = _CompanyEntity.CreatedDate;
                 _company.CreatedBy = _CompanyEntity.CreatedBy;
-                //_company.UpdatedDate = _CompanyEntity.UpdatedDate;
-                //_company.UpdatedBy = _CompanyEntity.UpdatedBy;
                 _company.CompanyType = _CompanyEntity.CompanyType;
 
+                //_company.UpdatedDate = _CompanyEntity.UpdatedDate;
+                //_company.UpdatedBy = _CompanyEntity.UpdatedBy;
+                //_company.Contact_Id = _CompanyEntity.Contact_Id;
 
-                int saveStatusCompany = _companyHelper.CreateCompany(_company);
+
+                _CompanyOutPut = _companyHelper.CreateCompany(_company);
+
+                int saveStatusCompany = Convert.ToUInt16(_CompanyOutPut["saveStatus"]);
 
                 if (saveStatusCompany > 0)
                 {
@@ -140,16 +149,19 @@ namespace Talent.Topper.WebAPI.Controllers
                     _branch.Name = _CompanyEntity.CompanyName;
                     _branch.HODName = _CompanyEntity.CEOName;
                     _branch.LogoPath = _CompanyEntity.LogoPath;
-                    //_branch.Company_ID = 0;
-                    //_branch.Contact_Id = 0;
                     _branch.IsActive = _CompanyEntity.IsActive;
                     _branch.CreatedDate = _CompanyEntity.CreatedDate;
                     _branch.CreatedBy = _CompanyEntity.CreatedBy;
+                    _branch.Company_ID = Convert.ToUInt16(_CompanyOutPut["OutPut"]);
+
+
                     //_branch.UpdatedDate = _CompanyEntity.UpdatedDate;
-                    //_branch.UpdatedBy = _CompanyEntity.UpdatedBy;
+                    //_branch.UpdatedBy = _CompanyEntity.UpdatedBy;                  
+                    //_branch.Contact_Id = 0;
 
+                    _BranchOutPut = _branchHelper.CreateBranch(_branch);
 
-                    int saveStatusBranch = _branchHelper.CreateBranch(_branch);
+                    int saveStatusBranch = Convert.ToUInt16(_BranchOutPut["saveStatus"]); 
 
                     if (saveStatusBranch > 0)
                     {
@@ -161,19 +173,33 @@ namespace Talent.Topper.WebAPI.Controllers
                         _contact.PhoneNo = _CompanyEntity.PhoneNo;
                         _contact.Email = _CompanyEntity.Email;
                         _contact.Password = _CompanyEntity.Password;
-                        //_contact.Gender = _CompanyEntity.Gender;
-                        //_branch.Company_ID = 0;
-                        //_branch.Contact_Id = 0;
-                        _branch.IsActive = _CompanyEntity.IsActive;
-                        _branch.CreatedDate = _CompanyEntity.CreatedDate;
-                        _branch.CreatedBy = _CompanyEntity.CreatedBy;
-                        //_branch.UpdatedDate = _CompanyEntity.UpdatedDate;
-                        //_branch.UpdatedBy = _CompanyEntity.UpdatedBy;
-                        // return response = Request.CreateResponse(HttpStatusCode.OK, _company);
+                        _contact.IsActive = _CompanyEntity.IsActive;
+                        _contact.CreatedDate = _CompanyEntity.CreatedDate;
+                        _contact.CreatedBy = _CompanyEntity.CreatedBy;
+                        _contact.Company_ID = Convert.ToUInt16(_CompanyOutPut["OutPut"]);
+                        _contact.Branch_ID = Convert.ToUInt16(_BranchOutPut["OutPut"]);
 
-                        int saveStatusContact = _branchHelper.CreateBranch(_branch);
-                        if(saveStatusContact>0)
+                        //_contact.UpdatedDate = _CompanyEntity.UpdatedDate;
+                        //_contact.UpdatedBy = _CompanyEntity.UpdatedBy;                           
+
+                        _ContactOutPut = _contactHelper.CreateContact(_contact);
+
+                        int saveStatusContact = Convert.ToUInt16(_BranchOutPut["saveStatus"]); 
+
+                        if (saveStatusContact > 0)
                         {
+                            TalentTopperEntities _dbContext = new TalentTopperEntities();
+                            int Branch_ID = Convert.ToUInt16(_BranchOutPut["OutPut"]);
+
+                            var branchbyid = _dbContext.BRANCHes.Where(x => x.ID == Branch_ID).FirstOrDefault();
+                            if (branchbyid != null)
+                            {
+                                _dbContext.Entry(branchbyid).State = EntityState.Modified;
+                                _dbContext.SaveChanges();
+                            }
+
+
+
                             return response = Request.CreateResponse(HttpStatusCode.OK, _company);
                         }
                         else

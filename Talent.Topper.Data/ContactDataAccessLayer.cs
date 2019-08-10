@@ -31,8 +31,10 @@ namespace Talent.Topper.Data
         /// </summary>
         /// <param name="_contact"></param>
         /// <returns></returns>
-        public int CreateContact(CONTACT _contact)
+        public Dictionary<string, string> CreateContact(CONTACT _contact)
         {
+            Dictionary<string, string> _ContactOutPut = new Dictionary<string, string>();
+
             _dbContext.CONTACTs.Add(_contact);
             if (_contact.ID > 0)
                 _dbContext.Entry(_contact).State = EntityState.Modified;
@@ -40,7 +42,10 @@ namespace Talent.Topper.Data
             int saveStatus = _dbContext.SaveChanges();
             long OutPut_ID = _contact.ID;
 
-            return saveStatus;
+            _ContactOutPut.Add("saveStatus", saveStatus.ToString());
+            _ContactOutPut.Add("OutPut", OutPut_ID.ToString());
+
+            return _ContactOutPut;
         }
     }
 }

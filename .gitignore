@@ -177,3 +177,4 @@ _NCrunch*
 *.jfm
 /oms.icedb/oms.icedb/dbo/Tables/execution_reports_institution_10094.sql
 /oms.icedb/oms.icedb/dbo/Tables/wallet_addresses_new_temp.sql
+/.vs/Talent.Topper.WebAPI/v16/Server/sqlite3

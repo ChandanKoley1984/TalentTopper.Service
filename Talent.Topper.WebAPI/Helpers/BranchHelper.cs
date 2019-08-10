@@ -23,7 +23,7 @@ namespace Talent.Topper.WebAPI.Helpers
         /// </summary>
         /// <param name="_company"></param>
         /// <returns></returns>
-        internal int CreateBranch(BRANCH _branch)
+        internal Dictionary<string, string> CreateBranch(BRANCH _branch)
         {
             return _branchDataAccessLayer.CreateBranch(_branch);
         }
