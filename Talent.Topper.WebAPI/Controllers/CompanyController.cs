@@ -191,13 +191,31 @@ namespace Talent.Topper.WebAPI.Controllers
 
                         if (saveStatusContact > 0)
                         {
+
+                            //*************to update branch and company tablw with contact id 
+
                             TalentTopperEntities _dbContext = new TalentTopperEntities();
                             int Branch_ID = Convert.ToUInt16(_BranchOutPut["OutPut"]);
+                            int Company_ID = Convert.ToUInt16(_CompanyOutPut["OutPut"]);
 
                             var branchbyid = _dbContext.BRANCHes.Where(x => x.ID == Branch_ID).FirstOrDefault();
+
                             if (branchbyid != null)
                             {
+                                branchbyid.Contact_Id = Convert.ToUInt16(_ContactOutPut["OutPut"]);
+
                                 _dbContext.Entry(branchbyid).State = EntityState.Modified;
+                                _dbContext.SaveChanges();
+                            }
+
+
+                            var companybyid = _dbContext.COMPANies.Where(x => x.ID == Company_ID).FirstOrDefault();
+
+                            if (companybyid != null)
+                            {
+                                companybyid.Contact_Id = Convert.ToUInt16(_ContactOutPut["OutPut"]);
+
+                                _dbContext.Entry(companybyid).State = EntityState.Modified;
                                 _dbContext.SaveChanges();
                             }
 
