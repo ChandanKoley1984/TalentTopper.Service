@@ -22,8 +22,6 @@ namespace Talent.Topper.Data
         public Nullable<int> state_id { get; set; }
         public Nullable<int> country_id { get; set; }
         public string pincode { get; set; }
-        public string MobileNo { get; set; }
-        public string PhoneNo { get; set; }
         public string Email { get; set; }
         public Nullable<int> Contact_id { get; set; }
         public Nullable<bool> IsActive { get; set; }

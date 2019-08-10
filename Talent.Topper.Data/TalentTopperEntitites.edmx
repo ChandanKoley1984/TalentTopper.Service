@@ -19,8 +19,6 @@ warning 6002: The table/view 'sandeep.dbo.ADDRESS' does not have a primary key d
           <Property Name="state_id" Type="int" />
           <Property Name="country_id" Type="int" />
           <Property Name="pincode" Type="nvarchar" MaxLength="100" />
-          <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
-          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
           <Property Name="Email" Type="nvarchar(max)" />
           <Property Name="Contact_id" Type="int" />
           <Property Name="IsActive" Type="bit" />
@@ -211,8 +209,6 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
     [ADDRESS].[state_id] AS [state_id], 
     [ADDRESS].[country_id] AS [country_id], 
     [ADDRESS].[pincode] AS [pincode], 
-    [ADDRESS].[MobileNo] AS [MobileNo], 
-    [ADDRESS].[PhoneNo] AS [PhoneNo], 
     [ADDRESS].[Email] AS [Email], 
     [ADDRESS].[Contact_id] AS [Contact_id], 
     [ADDRESS].[IsActive] AS [IsActive], 
@@ -265,11 +261,11 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
           <EntitySet Name="MENU_MASTER" EntityType="TalentTopperDB.MENU_MASTER" />
           <EntitySet Name="ROLEs" EntityType="TalentTopperDB.ROLE" />
           <EntitySet Name="ROLE_PERMISSION" EntityType="TalentTopperDB.ROLE_PERMISSION" />
-          <EntitySet Name="ADDRESSes" EntityType="TalentTopperDB.ADDRESS" />
           <EntitySet Name="COMPANies" EntityType="TalentTopperDB.COMPANY" />
           <EntitySet Name="CONTACTs" EntityType="TalentTopperDB.CONTACT" />
           <EntitySet Name="STATE_MASTER" EntityType="TalentTopperDB.STATE_MASTER" />
           <EntitySet Name="BRANCHes" EntityType="TalentTopperDB.BRANCH" />
+          <EntitySet Name="ADDRESSes" EntityType="TalentTopperDB.ADDRESS" />
         </EntityContainer>
         <EntityType Name="COUNTRY_MASTER">
           <Key>
@@ -363,31 +359,6 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
           <Property Name="Company_Id" Type="Int32" />
           <Property Name="Branch_Id" Type="Int32" />
         </EntityType>
-        <EntityType Name="ADDRESS">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="addressline" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="city" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="district_id" Type="Int32" />
-          <Property Name="state_id" Type="Int32" />
-          <Property Name="country_id" Type="Int32" />
-          <Property Name="pincode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Contact_id" Type="Int32" />
-          <Property Name="IsActive" Type="Boolean" />
-          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
-          <Property Name="CreatedBy" Type="Int32" />
-          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
-          <Property Name="UpdatedBy" Type="Int32" />
-          <Property Name="Company_ID" Type="Int64" />
-          <Property Name="Branch_ID" Type="Int64" />
-          <Property Name="is_default" Type="Int32" />
-        </EntityType>
         <EntityType Name="COMPANY">
           <Key>
             <PropertyRef Name="ID" />
@@ -450,6 +421,29 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
           <Property Name="CreatedBy" Type="Int32" />
           <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
           <Property Name="UpdatedBy" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ADDRESS">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="addressline" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="city" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="district_id" Type="Int32" />
+          <Property Name="state_id" Type="Int32" />
+          <Property Name="country_id" Type="Int32" />
+          <Property Name="pincode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_id" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" />
+          <Property Name="Company_ID" Type="Int64" />
+          <Property Name="Branch_ID" Type="Int64" />
+          <Property Name="is_default" Type="Int32" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -556,32 +550,6 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="ADDRESSes">
-            <EntityTypeMapping TypeName="TalentTopperDB.ADDRESS">
-              <MappingFragment StoreEntitySet="ADDRESS">
-                <ScalarProperty Name="is_default" ColumnName="is_default" />
-                <ScalarProperty Name="Branch_ID" ColumnName="Branch_ID" />
-                <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
-                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
-                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
-                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="Contact_id" ColumnName="Contact_id" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
-                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
-                <ScalarProperty Name="pincode" ColumnName="pincode" />
-                <ScalarProperty Name="country_id" ColumnName="country_id" />
-                <ScalarProperty Name="state_id" ColumnName="state_id" />
-                <ScalarProperty Name="district_id" ColumnName="district_id" />
-                <ScalarProperty Name="city" ColumnName="city" />
-                <ScalarProperty Name="addressline" ColumnName="addressline" />
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="COMPANies">
             <EntityTypeMapping TypeName="TalentTopperDB.COMPANY">
               <MappingFragment StoreEntitySet="COMPANY">
@@ -645,6 +613,30 @@ warning 6002: The table/view 'sandeep.dbo.STATE_MASTER' does not have a primary 
                 <ScalarProperty Name="HODName" ColumnName="HODName" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADDRESSes">
+            <EntityTypeMapping TypeName="TalentTopperDB.ADDRESS">
+              <MappingFragment StoreEntitySet="ADDRESS">
+                <ScalarProperty Name="is_default" ColumnName="is_default" />
+                <ScalarProperty Name="Branch_ID" ColumnName="Branch_ID" />
+                <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Contact_id" ColumnName="Contact_id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="pincode" ColumnName="pincode" />
+                <ScalarProperty Name="country_id" ColumnName="country_id" />
+                <ScalarProperty Name="state_id" ColumnName="state_id" />
+                <ScalarProperty Name="district_id" ColumnName="district_id" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="addressline" ColumnName="addressline" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

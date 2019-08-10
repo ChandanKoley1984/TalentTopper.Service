@@ -214,6 +214,7 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\DnsClient.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\System.Buffers.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.WebAPI.pdb
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Newtonsoft.Json.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\System.Net.Http.Formatting.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\System.Web.Helpers.xml
@@ -231,6 +232,7 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.E
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\MongoDB.Driver.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\MongoDB.Driver.Core.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\DnsClient.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csprojResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.pdb
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.Data.dll
@@ -307,11 +309,10 @@ C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Tale
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\EntityFramework.xml
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\MongoDB.Driver.Core.xml
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\DnsClient.xml
-C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csprojResolveAssemblyReference.cache
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.dll
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.pdb
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.WebAPI.dll.config
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.Data.dll.config
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csprojAssemblyReference.cache
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csproj.CoreCompileInputs.cache
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csproj.CopyComplete
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.WebAPI.dll.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\bin\Debug\Talent.Topper.Data.dll.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csprojAssemblyReference.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csproj.CoreCompileInputs.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI.Tests\obj\Debug\Talent.Topper.WebAPI.Tests.csproj.CopyComplete

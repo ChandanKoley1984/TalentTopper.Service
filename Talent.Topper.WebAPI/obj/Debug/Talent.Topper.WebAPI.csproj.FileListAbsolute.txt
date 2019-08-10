@@ -153,6 +153,7 @@ E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFra
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
 E:\Talent_Topper_Project\Talent.Topper.WebAPI\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.fakesconfig
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.QualityTools.Testing.Fakes.dll
@@ -160,6 +161,7 @@ A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.xml
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\EntityFramework.SqlServer.xml
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojFakesResolveAssemblyReference.cache
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.dll
 A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Swashbuckle.Core.1.0.0.0.Fakes.xml
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\ApplicationInsights.config
@@ -240,10 +242,10 @@ C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Tale
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.Deployment.xml
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\System.Web.WebPages.Razor.xml
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Antlr3.Runtime.pdb
-C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.dll
 C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.pdb
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Data.dll.config
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojAssemblyReference.cache
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csproj.CoreCompileInputs.cache
-A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csproj.CopyComplete
+A:\MVC\TalentTopper.Service\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojResolveAssemblyReference.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\bin\Talent.Topper.Data.dll.config
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csprojAssemblyReference.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csproj.CoreCompileInputs.cache
+C:\My Personal Data\F Drive(Project )\Talent_Topper_Project\TalentTopperApi\Talent.Topper.WebAPI\obj\Debug\Talent.Topper.WebAPI.csproj.CopyComplete
