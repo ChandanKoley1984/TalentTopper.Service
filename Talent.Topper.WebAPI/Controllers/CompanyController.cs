@@ -118,11 +118,7 @@ namespace Talent.Topper.WebAPI.Controllers
             Dictionary<string, string> _ContactOutPut = new Dictionary<string, string>();
 
             try
-            {
-                //select* from company : done
-                //select* from branch
-                //select* from[dbo].[CONTACT]
-                //d* from[dbo].[ADDRESS]
+            {   
 
                 COMPANY _company = new COMPANY();
                 _company.ID = _CompanyEntity.ID;
@@ -134,12 +130,7 @@ namespace Talent.Topper.WebAPI.Controllers
                 _company.CreatedDate = _CompanyEntity.CreatedDate;
                 _company.CreatedBy = _CompanyEntity.CreatedBy;
                 _company.CompanyType = _CompanyEntity.CompanyType;
-
-                //_company.UpdatedDate = _CompanyEntity.UpdatedDate;
-                //_company.UpdatedBy = _CompanyEntity.UpdatedBy;
-                //_company.Contact_Id = _CompanyEntity.Contact_Id;
-
-
+              
                 _CompanyOutPut = _companyHelper.CreateCompany(_company);
 
                 int saveStatusCompany = Convert.ToUInt16(_CompanyOutPut["saveStatus"]);
@@ -156,12 +147,7 @@ namespace Talent.Topper.WebAPI.Controllers
                     _branch.CreatedDate = _CompanyEntity.CreatedDate;
                     _branch.CreatedBy = _CompanyEntity.CreatedBy;
                     _branch.Company_ID = Convert.ToUInt16(_CompanyOutPut["OutPut"]);
-
-
-                    //_branch.UpdatedDate = _CompanyEntity.UpdatedDate;
-                    //_branch.UpdatedBy = _CompanyEntity.UpdatedBy;                  
-                    //_branch.Contact_Id = 0;
-
+                    
                     _BranchOutPut = _branchHelper.CreateBranch(_branch);
 
                     int saveStatusBranch = Convert.ToUInt16(_BranchOutPut["saveStatus"]); 
@@ -180,10 +166,7 @@ namespace Talent.Topper.WebAPI.Controllers
                         _contact.CreatedDate = _CompanyEntity.CreatedDate;
                         _contact.CreatedBy = _CompanyEntity.CreatedBy;
                         _contact.Company_ID = Convert.ToUInt16(_CompanyOutPut["OutPut"]);
-                        _contact.Branch_ID = Convert.ToUInt16(_BranchOutPut["OutPut"]);
-
-                        //_contact.UpdatedDate = _CompanyEntity.UpdatedDate;
-                        //_contact.UpdatedBy = _CompanyEntity.UpdatedBy;                           
+                        _contact.Branch_ID = Convert.ToUInt16(_BranchOutPut["OutPut"]);         
 
                         _ContactOutPut = _contactHelper.CreateContact(_contact);
 
@@ -231,9 +214,7 @@ namespace Talent.Topper.WebAPI.Controllers
                     else
                     {
                         return response = Request.CreateResponse(HttpStatusCode.NotFound, "Unable to create company");
-                    }
-
-                    //return response = Request.CreateResponse(HttpStatusCode.OK, _company);
+                    }                  
                 }
                 else
                 {
