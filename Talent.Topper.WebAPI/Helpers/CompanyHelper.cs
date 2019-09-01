@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+
 using Talent.Topper.Data;
+using Talent.Topper.WebAPI.Entity;
 
 namespace Talent.Topper.WebAPI.Helpers
 {
@@ -23,10 +24,21 @@ namespace Talent.Topper.WebAPI.Helpers
         /// </summary>
         /// <param name="_company"></param>
         /// <returns></returns>
-        internal Dictionary<string, string>CreateCompany(COMPANY _company)
-        {            
+        internal Dictionary<string, string> CreateCompany(COMPANY _company)
+        {
             return _companyDataAccessLayer.CreateCompany(_company);
         }
 
+
+        internal List<CompanyEntity> GetCompanyByID(int? id)
+        {
+            return _companyDataAccessLayer.GetCompanyByID(id).ToList();
+        }
+
+
+        public bool CreateCompanyWithBranch(CompanyEntity _CompanyEntity)
+        {            
+            return _companyDataAccessLayer.CreateCompanyWithBranch(_CompanyEntity); 
+        }
     }
 }

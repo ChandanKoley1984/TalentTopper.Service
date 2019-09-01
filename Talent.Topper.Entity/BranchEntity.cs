@@ -2,7 +2,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 
-namespace Talent.Topper.WebAPI.Models
+namespace Talent.Topper.WebAPI.Entity
 {
     public class BranchEntity
     {

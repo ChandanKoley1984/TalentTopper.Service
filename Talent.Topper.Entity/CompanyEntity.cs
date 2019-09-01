@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Talent.Topper.WebAPI.Models
+namespace Talent.Topper.WebAPI.Entity
 {
     public class CompanyEntity
     {
