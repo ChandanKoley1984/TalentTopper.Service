@@ -44,3 +44,4 @@ C:\ChandanCode\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.csproj.CopyComplete
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.pdb
+C:\ChandanCode\TalentTopper.Service\Talent.Topper.Entity\obj\Debug\Talent.Topper.Entity.csprojAssemblyReference.cache
