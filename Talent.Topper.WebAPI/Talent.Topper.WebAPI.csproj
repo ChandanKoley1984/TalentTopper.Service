@@ -282,6 +282,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Fakes Include="Fakes\Swashbuckle.Core.fakes" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -305,10 +306,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mongo.Helper\Mongo.Helper.csproj">
-      <Project>{173bb5a1-60b6-4b37-a724-0c45a1ed2fac}</Project>
-      <Name>Mongo.Helper</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Talent.Topper.Data\Talent.Topper.Data.csproj">
       <Project>{5841a58c-97e1-4f8f-834e-8bbaeb0e47d6}</Project>
       <Name>Talent.Topper.Data</Name>

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2a4f2df241644bf9b8f895a8c9352393" Name="Diagram1" ZoomLevel="89">
+      <Diagram DiagramId="2a4f2df241644bf9b8f895a8c9352393" Name="Diagram1" ZoomLevel="85">
         <EntityTypeShape EntityType="TalentTopperDB.COUNTRY_MASTER" Width="1.5" PointX="0.75" PointY="0.75" />
         <EntityTypeShape EntityType="TalentTopperDB.DISTRICT_MASTER" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="TalentTopperDB.IDMaster" Width="1.5" PointX="0.75" PointY="3.75" />
@@ -13,7 +13,7 @@
         <EntityTypeShape EntityType="TalentTopperDB.ROLE" Width="1.5" PointX="4.75" PointY="5.75" />
         <EntityTypeShape EntityType="TalentTopperDB.ROLE_PERMISSION" Width="1.5" PointX="6.75" PointY="0.75" />
         <EntityTypeShape EntityType="TalentTopperDB.STATE_MASTER" Width="1.5" PointX="2.75" PointY="9.75" />
-        <EntityTypeShape EntityType="TalentTopperDB.BRANCH" Width="1.5" PointX="9.375" PointY="10.75" />
+        <EntityTypeShape EntityType="TalentTopperDB.BRANCH" Width="1.5" PointX="12.375" PointY="2.75" />
         <EntityTypeShape EntityType="TalentTopperDB.ADDRESS" Width="1.5" PointX="5.375" PointY="9.75" />
         <EntityTypeShape EntityType="TalentTopperDB.COMPANY" Width="1.5" PointX="9.375" PointY="0.75" />
         <EntityTypeShape EntityType="TalentTopperDB.CONTACT" Width="1.5" PointX="7.375" PointY="5.75" />

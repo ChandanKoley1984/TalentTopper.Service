@@ -279,7 +279,6 @@ C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.AI.Window
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.ApplicationInsights.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Microsoft.Web.Infrastructure.dll
-C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Mongo.Helper.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Bson.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Driver.Core.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\MongoDB.Driver.dll
@@ -301,7 +300,6 @@ C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Data.
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Entity.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\WebActivatorEx.dll
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\WebGrease.dll
-C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Mongo.Helper.pdb
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Data.pdb
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Data.dll.config
 C:\ChandanCode\TalentTopper.Service\Talent.Topper.WebAPI\bin\Talent.Topper.Entity.pdb
